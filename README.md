@@ -70,6 +70,12 @@ Student project researching the intersection between Smart Shop and Smart Home; 
 
 # Allgemein
 ## Einordnung
+### Smart Home
+Der IOT- bzw. Smart-Home-Markt ist mittlerweile so breit aufgestellt, dass die Smart-Home-Anbieter meist nicht das ganze Spektrum an Smart-Home-Geräten anbieten können.
+Diese Problematik entstand durch einige Einflussfaktoren. Dazu gehören bspw. der schnelle Wachstum, wodurch Anbieter schwer hinterherkommen, das fehlende Knowhow in entsprechenden Bereichen, da der Markt sehr umfangreich ist, und vor allem ein gemeinsamer Standard, welcher die Kompatibilität zwischen Geräten verschiedener Hersteller möglich machen würde.
+Die Anwendung von Smart-Home-Geräten steigt stetig, jedoch hält sich die Akzeptanz der Geräte in Grenzen. Dies ist in den meisten Fällen der Unsicherheit geschuldet, welche bspw. durch eine Vielzahl unterschiedlicher Anbieter und den sich sehr unterscheidenden Protokollen ohne einheitlichen Standard entsteht. Diese Unsicherheit besteht sicherlich auch durch die bisherige Undurchsichtigkeit der Kompatibilitäten und Standards. D.h. dadurch dass sich bisher noch kein Standard richtig durchgesetzt hat, werden Smart-Home-Vorrichtungen vorsichtshalber noch nicht installiert, da die Erweiterbarkeit, sowie die Wartbarkeit für zukünftige Anpassungen des Smart Homes nicht garantiert sind.
+
+### Smart Shop
 ## Standards
 Wie in der zuvor beschriebenen Einordnung zu erkennen entsteht die größte Unsicherheit der potentiellen Kunden von Smart-Home-Geräten oftmals in der Inkompatibilität von Geräten von unterschiedlichen Herstellern.
 Die Inkompatibilität ist auf Transport-Ebene den unterschiedlichsten Protokollen zuzuschreiben. Hier konkurrieren Funkprotokolle wie bspw. Zigbee, Z-Wave, Wifi, Bluetooth, EnOcean, uvm. miteinander. Zusätzlich stehen die vereinzelt eingesetzten kabelgebundenen Systeme wie Powerline-basierte Lösungen in Konkurrenz.
@@ -77,9 +83,9 @@ Dieser Protokoll-„Wirrwarr“ macht es für den Endkunden wirklich schwierig f
 Die Smart-Home-Hersteller bemühen sich jedoch nicht wirklich um einen eigenen Standard, sondern entwickeln meist proprietäre Protokolle und Standards. D.h. sie machen oft ‚ihr eigenes Ding‘ indem Sie unabhängig vom Rest des Marktes eigene Standards ins Leben rufen. Dies hat dazu geführt, dass es unzählige ‚Standards‘ und Protokolle im Smart Home Bereich gibt.
 Für den Endanwender bringt dies einige Probleme mit sich, wenn man sein Haus ‚smart‘ machen will ohne sich dabei auf Produkte eines Herstellers beschränken zu müssen. Durch die vielen oftmals auch ‚kleinen‘ Anbieter hat sich der Trend entwickelt, dass für jedes smarte Gerät auch eine entsprechende Bridge erworben werden muss, um das bzw. die Geräte ansteuern zu können. D.h. werden in einem Haushalt Produkte von einem verschiedenen Hersteller verwendet, müssen i.d.R. auch entsprechend viele Bridges erworben werden. Eine einheitliche Steuerung der Geräte ist oftmals überhaupt nicht möglich, da sich die Plattformen welche zur Steuerung verwendet werden in ihren Protokollstandards ebenfalls unterscheiden können.
 Um dieses Problem zu beheben gibt es verschiedene Möglichkeiten:
-* 1)	Schaffung eines einheitlichen Standards (auf Transportebene – d.h. einheitliches Netzwerkprotokoll, Pairing, Bereitstellung Fähigkeiten, …)
-* 2)	Verwendung einer Integrationsplattform (Vereinigung der verschiedenen Standards durch entsprechende Adapter – Übersetzung der verschiedenen Protokolle in ‚Einheitssprache‘.)
-* 3)	Eine Kombination aus 1) und 2)
+1.	Schaffung eines einheitlichen Standards (auf Transportebene – d.h. einheitliches Netzwerkprotokoll, Pairing, Bereitstellung Fähigkeiten, …)
+2.	Verwendung einer Integrationsplattform (Vereinigung der verschiedenen Standards durch entsprechende Adapter – Übersetzung der verschiedenen Protokolle in ‚Einheitssprache‘.)
+3.	Eine Kombination aus 1) und 2)
 
 
 # Marktanalyse
