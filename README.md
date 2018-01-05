@@ -7,6 +7,8 @@ Student project researching the intersection between Smart Shop and Smart Home; 
 # Inhaltsangabe
 - [Allgemein](#allgemein)
   * [Einordnung](#einordnung)
+    + [Smart Home](#smart-home)
+    + [Smart Shop](#smart-shop)
   * [Standards](#standards)
 - [Marktanalyse](#marktanalyse)
   * [Hersteller](#hersteller)
