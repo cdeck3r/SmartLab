@@ -118,7 +118,7 @@ D.h. durch die enstehende Abhängigkeit zu Apple könnten ebenfalls die Absätze
 
 #### Produktpalette
 Die Produktpalette für Smart Home von Apple ist nicht ganz trivial einzuordnen.
-Iphones, Ipads und andere 'Steuerungsgeräte' dienen lediglich zur Steuerung und zum Abruf von Informationen. Smart Home Geräte wie smarte Glühbirnen oder Temperatursensoren werden nicht direkt von Apple vertrieben.
+Iphones, Ipads und andere Appleprodukte dienen lediglich zur Steuerung und zum Abruf von Informationen. Smart Home Geräte wie smarte Glühbirnen oder Temperatursensoren werden dabei allerdings nicht direkt von Apple vertrieben.
 Hierbei haben sich allerdings im Laufe der Jahre eine ganze Reihe an Herstellern mit ihren Produkten angepasst und die von Apple bereitgestellte Schnittstelle für Ihre Geräte und Sensoren implementiert. Um die Funktionalitäten nutzen zu können vertreibt Apple entsprechende Zertifizierungen für ihre HomeKit-Umgebung.
 
 Zertifizierte Produkte und Hersteller sind mittlerweile reichlich vorhanden, hier ein paar kleine Beispiele:
