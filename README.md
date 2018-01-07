@@ -103,11 +103,39 @@ Um dieses Problem zu beheben gibt es verschiedene Möglichkeiten:
 
 ### Apple
 #### Platform
+Apple's aktuelle Smart Home Platform nennt sich Apple HomeKit und stellt eine zentrale Platform zur Steuerung von Smart Home Geräten dar.
+Diese Platform stellt ein von Apple entwickeltes Protokoll zur Kommunikation mit Smart Home Geräten bereit. Um Geräte in diese Platform einzubetten bzw. die Protokolle in Ihren Geräten zu integrieren ist eine Zertifizierung auf Seiten von Apple notwendig, um die volle Funktionalität des Apple HomeKits verwenden zu können.
+
 #### Geschaeftsmodell
+Apples Geschäftsmodell für den Smart Home Bereich unterscheidet sich von den meisten Ansätzen. Die Platform Apple HomeKit kann auf Apple-Geräten betrieben werden und entsprechende Smart Home Geräte oder Sensoren können mit ihnen verbunden werden. Als Fernsteuerung des Smart Homes dient dabei dann bspw. ein Iphone, ein Ipad oder auch ein AppleTV.
+Allerdings können hierbei wie zuvor beschrieben nur von Apple zertifizierte Geräte oder Sensoren in die Umgebung eingebunden werden. Für die Zertifizierung der Geräte verlangt Apple dabei ein Entgelt.
+Eigene Smart Home Geräte bzw. Sensoren wie Lichtsteuerungen oder Temperatursensooren werden von Apple bisher nicht angeboten, sondern lediglich die in Ihrer Platform als Steuerungszentrale fungierende Geräte wie Iphones, AppleTVs oder Ipads.
+
+Das Geschäftsmodell von Apple bzgl. Smart Home basiert hauptsächlich auf dem Vertrieb von Zertifizierungen welche für andere Smart Home Hersteller angeboten werden. Das Angebot ihrer Platform HomeKit und die flächendeckende Verbreitung von Apple-Geräten wie dem Iphone hat den netten (kalkulierbaren) Nebeneffekt, dass die als Steuerungszentrale fungierenden Applegeräte stark in den Smart Home Bereich eingewoben werden.
+D.h. durch die enstehende Abhängigkeit zu Apple könnten ebenfalls die Absätze der anderen von Apple angebotenen Produkte positiv beeinflusst werden.
+
 #### Produktpalette
+Die Produktpalette für Smart Home von Apple ist nicht ganz trivial einzuordnen.
+Iphones, Ipads und andere 'Steuerungsgeräte' dienen lediglich zur Steuerung und zum Abruf von Informationen. Smart Home Geräte wie smarte Glühbirnen oder Temperatursensoren werden nicht direkt von Apple vertrieben.
+Hierbei haben sich allerdings im Laufe der Jahre eine ganze Reihe an Herstellern mit ihren Produkten angepasst und die von Apple bereitgestellte Schnittstelle für Ihre Geräte und Sensoren implementiert. Um die Funktionalitäten nutzen zu können vertreibt Apple entsprechende Zertifizierungen für ihre HomeKit-Umgebung.
+
+Zertifizierte Produkte und Hersteller sind mittlerweile reichlich vorhanden, hier ein paar kleine Beispiele:
+
+* (Sicherheits-)Kameras von bspw. Logitech oder D-Link
+* Bewegungssensoren von bspw Elgato
+* smarte Glühbirnen von bspw. Philips
+* Termostate von bspw. Honeywell
+* ...
+
+(Demnächst wird Apple ihr Angebot durch einen smarten Lautsprecher erweitern, welcher zudem als Homeassistant dienen soll um sein smartes Zuhause bequem per Spracheingabe steuern zu können.)
+
 #### Protokolle
-#### Sicherheit
+Das von Apple HomeKit verwendete Protokoll zur Kommunikation innerhalb der Smart Home Landschaft wird als 'Homekit Accessory Protocol" (kurz HAP) bezeichnet. Der von Apple entwickelte Standard kommuniziert über WLAN und Bluetooth 4.0 mit den Smart Home Geräten und Sensoren.
+Protokolle wie Zigbee oder Z-Wave sind aktuell nicht direkt mit HomeKit steuerbar, da die steuernden Geräte (bspw. Iphone) diese Protokolle nicht unterstützen.
+
 #### Kompatibilitaet
+Da das Apple HomeKit aktuell nur das HomeKit Accessory Protocol unterstützt, können nur Geräte mit entsprechender Zertifizierung in das Smart Home integriert werden. Umwege können ggf. anhand sogenannter Bridges realisiert werden, wenn der anbietende Hersteller  über entsprechende Geräte inklusive benötigter HomeKit-Zertifizierungen verfügt. Da Apple jedoch selbst entscheidet wen und was sie zertifizieren und was nicht, ist eine solche Kombination aus bspw. Zigbee und HAP nicht unbedingt realisierbar bzw. nur nach der Freigabe von Apple.
+Bisher ist nicht ersichtlich, ob Apple Bridges dieser Art für ihre Umgebung zertifizieren wird, oder ob sich die Zertifizierung nur auf Endgeräte wie Sensoren oder Ähnliches beschränkt.
 
 ### Bosch bzw. BSH
 #### Platform
