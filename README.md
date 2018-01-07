@@ -106,6 +106,8 @@ Um dieses Problem zu beheben gibt es verschiedene Möglichkeiten:
 Apple's aktuelle Smart Home Platform nennt sich Apple HomeKit und stellt eine zentrale Platform zur Steuerung von Smart Home Geräten dar.
 Diese Platform stellt ein von Apple entwickeltes Protokoll zur Kommunikation mit Smart Home Geräten bereit. Um Geräte in diese Platform einzubetten bzw. die Protokolle in Ihren Geräten zu integrieren ist eine Zertifizierung auf Seiten von Apple notwendig, um die volle Funktionalität des Apple HomeKits verwenden zu können.
 
+Apple Geräte wie Iphone, Ipad oder AppleTV fungieren im Apple HomeKit als Steuerungseinheit. D.h. jegliche Steuerungssignale an das Smart Home können von den Apple Geräten über den Tocuhbildschirm, Tastatureingabe oder auch die Spracheingabe abgesetzt werden und dienen somit als smarte Fernbedienung für das Smart Home.
+
 #### Geschaeftsmodell
 Apples Geschäftsmodell für den Smart Home Bereich unterscheidet sich von den meisten Ansätzen. Die Platform Apple HomeKit kann auf Apple-Geräten betrieben werden und entsprechende Smart Home Geräte oder Sensoren können mit ihnen verbunden werden. Als Fernsteuerung des Smart Homes dient dabei dann bspw. ein Iphone, ein Ipad oder auch ein AppleTV.
 Allerdings können hierbei wie zuvor beschrieben nur von Apple zertifizierte Geräte oder Sensoren in die Umgebung eingebunden werden. Für die Zertifizierung der Geräte verlangt Apple dabei ein Entgelt.
