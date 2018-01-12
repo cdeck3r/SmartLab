@@ -95,11 +95,39 @@ Um dieses Problem zu beheben gibt es verschiedene Möglichkeiten:
 
 ### Amazon
 #### Platform
+Durch Öffnung des intelligentem Sprachassistenten „Alexa“, errichtet Amazon eine Plattform für fremde Hersteller von Smart Home Produkten. Um die Vision des vernetzten und komfortablen mit Sprachbefehlen steuerbaren smarten Zuhauses zu verwirklichen bzw. ein Schritt näher zu bringen. Amazon möchte in Zukunft mit Alexa eine große Rolle in Home Automation Business einnehmen und bietet den Smart Home Produkthersteller eine standardisierte Programmierschnittstelle (API) an, für den Zugriff auf den Sprachassistenten.
+
 #### Geschaeftsmodell
+Amazon sieht in Alexa ganz trivial einen weiteren Kanal, Produkte zu verkaufen.  Denn die wichtigsten Prozesse laufen auf den Servern der Unternehmen ab. Anfragen an Alexa werden über die Server geschleust. 
+Somit entsteht ein weiterer Layer zwischen Endkunde und Drittanbietern. Den Anbietern wird der Zugang zum System gewährt und diese können dann ihre Applikationen anbieten, in diesem Fall „Skills“. Zusätzlich können Smarthome-Geräte, Fahrzeuge und andere Alltagsgegenstände mit dem System vernetzt werden.
+Dadurch erhält Amazon uneingeschränkten Zugriff auf digitale Informationen. Es werden also während der Nutzung von Alexa kontinuierliche Daten gesendet und archiviert. Über diese Daten hat der Nutzer nur wenig Kontrolle. Durch diese gesammelten Daten kann Amazon ein genaues Profil über den Nutzer erstellen und durch gezielte Angebote den Kunden locken Produkte zu kaufen. Diese Kundenprofile können von Amazon in naher Zukunft noch weiter optimal eingesetzt werden. Beispielsweise in den geplanten „Amazon Go“ Märkten.
+
 #### Produktpalette
+* Amazon Echo Plus (149,99 €)
+* Amazon Echo (99,99 €)
+* Amazon Echo Dot (34,99 €)
+* Amazon Prime Mitgliedschaft verspricht zusätzlich Vorteile bei der Nutzung von Alexa, beispielsweise können verfügbare Produkte erneut bestellt werden
+
 #### Protokolle
-#### Sicherheit
-#### Kompatibilitaet
+Amazon Alexa und die mit Alexa gekoppelten SmartHome-Geräte kommunizieren über WLAN. Also sind alle Geräte mit einem zentralen Gateway verbunden. Natürlich im selben Netzwerk. Die Intelligenz, damit Alexa die SmartHome Geräte ansteuern kann erfolt über API.
+
+#### Smart-Home-Partner
+*	Deutsche Telekom
+*	Spotify
+*	Phillips (Smarte Lampen)
+*	Innogy ( bspw. Tür – und Fenstersensoren)
+*	Tado (Smarte Thermostate)
+*	Wemo (Intelligente Steckdosen)
+
+
+#### Kompatibilitaet - Application Programming Interface (API)
+Um eine universelle Sprachsteuerung von Smart Home Devices durch Alexa zu ermöglichen, stelle Amazon das Interface API zu Verfügung. Die Software ist neuer Bestandteil des so genannten „Alexa Skills Kit“ und wird als „Smart Home API“ bezeichnet.
+Die API erschafft eine standardisierte Schnittstelle für Programmierer von Smart Home Produkten. Über diese Schnittstelle können sie auf die verschiedenen Funktionen von Alexa zugreifen. Dadurch kann der Sprachassistent in die Lage versetzt werden, wenn er gefragt wird, die verschiedenen Geräte zu steuern. Die Intelligenz verlagert sich gleichzeitig in Richtung Alexa und die Komplexität und Hardwareanforderungen an die Smart Home Geräte sinken.
+Durch API lass sich Funktionen für die Sprachsteuerung wesentlich schneller und einfacher in die Smart Home Devices integrieren. Zusätzlich lässt sich für die komplette per Alexa sprachgesteuerte Smart Home Welt ein einheitlicher Wortschatz verwenden.
+
+* Vorteil für Smart Home Gerätehersteller,  einheitliche Sprachbefehle werden von ihre Devices über die API verstanden, ohne selbst die nötige Intelligenz zu besitzen
+* Vorteil für den User, nur wenige Befehle für die Steuerung der unterschiedlichen Funktionen des smarten Zuhauses nötig.
+
 
 ### Apple
 #### Platform
@@ -165,11 +193,32 @@ Bisher ist nicht ersichtlich, ob Apple Bridges dieser Art für ihre Umgebung zer
 
 ### eQ-3
 #### Platform
+Die eQ-3 AG ist ein deutsches Technologieunternehmen im Bereich Smart Home. eQ-3 vertreibt seine Produkte unter der Marke HomeMatic, Homematic IP und MAX!. Darüber hinaus ist das Unternehmen Auftragsfertiger für innogy und QIVICON, eine Smart Home-Allianz der Deutschen Telekom.
+HomeMatic
+Unter der Baureihe Homematic, vertreibt eQ-3 Produkte, welche die Steuerung von einfachen Funktionen bis hin zu komplexen Szenarien in Haus oder Wohnung ermöglichen. Haupt-Augenmerk liegen neben der Steigerung von Komfort und Sicherheit in der Reduktion von Energiekosten. Kernbestandteil einer Homematic-Installation bildet die Zentrale Steuereinheit CCU2. 
+Homematic IP
+Homematic IP basiert in Teilen auf der Produktreihe Homematic und umfasst Produkte aus den Bereichen Raumklima, Sicherheit und Licht. 
+Im Gegensatz zur Produktreihe Homematic liegt der Fokus hier auf der Steuerung über die ebenfalls von eQ-3 entwickelte Smartphone-App. Konfiguration und Bedienung laufen über den von eQ-3 betriebenen Homematic IP Cloud-Service. Die in der Homematic IP Cloud gespeicherten Daten liegen dort in anonymisierter Form vor, da von Seiten des Nutzers keine Daten im Rahmen der Registrierung abgefragt werden. Über die Homematic Zentrale CCU2 können Homematic IP Geräte in ein bestehendes Homematic System eingebunden werden.
+MAX!
+Die Produktreihe Max konzentriert sich auf die Steuerung von Temperatur in Wohnräumen entweder als lokale Heizkörperregelung oder als zentral gesteuerte Lösung. Zur Realisierung kommen Heizkörperthermostate, Fensterkontakte, Wandthermostate sowie die von eQ-3 entwickelte Smartphone-App zum Einsatz.
+
+
 #### Geschaeftsmodell
+Alle Produkte aus dem Hause eQ-3 wird fein säuberlich gegeneinander abgeschottet. HomeMatic setzt auf den autarken, absolut datenschutzkonformen Eigenbetrieb hinter dem eigenen DSL-Anschluss. Cloud-Dienste müssen kostenpflichtig hinzugebucht werden. Steuerung der hauseigenen Produkte nur über die eQ-3 SmartHome App. 
+
 #### Produktpalette
+*	HomeMatic Zentrale CCU2
+*	Heizkörperthermostate
+*	Rollladen-und Markisensteuerung
+*	Sicherheit und Überwachungsgeräte
+*	KeyMatic für Haustüren usw.
+
 #### Protokolle
-#### Sicherheit
+* HomeMatic: Datenübertragung wird das ISM-Band Typ B im Bereich 868-MHz genutzt
+* Homematic IP: Als Datenübertragung wird IPv6 sowie das ISM-Band Typ B im Bereich 868-MHz genutzt
+
 #### Kompatibilitaet
+Homematic Zentrale CCU2 übernimmt als zentrales Element des Homematic Systems vielfältige Steuer-, Kontroll- und Konfigurationsmöglichkeiten für alle Homematic Geräte einer Installation. Bedienung der Zentrale erfolgt komfortabel am PC oder Tablet über die Homematic Bedienoberfläche WebUI. Konfiguration und Bedienung sowie Statusabfrage aller Homematic Geräte möglich und Komplexe Steueraufgaben sowie individuelle Logikfunktionen können über Zentralenprogramme realisiert werden
 
 ### digitalStrom
 #### Platform
