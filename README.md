@@ -194,12 +194,17 @@ Bisher ist nicht ersichtlich, ob Apple Bridges dieser Art für ihre Umgebung zer
 ### eQ-3
 #### Platform
 Die eQ-3 AG ist ein deutsches Technologieunternehmen im Bereich Smart Home. eQ-3 vertreibt seine Produkte unter der Marke HomeMatic, Homematic IP und MAX!. Darüber hinaus ist das Unternehmen Auftragsfertiger für innogy und QIVICON, eine Smart Home-Allianz der Deutschen Telekom.
+
 HomeMatic
+
 Unter der Baureihe Homematic, vertreibt eQ-3 Produkte, welche die Steuerung von einfachen Funktionen bis hin zu komplexen Szenarien in Haus oder Wohnung ermöglichen. Haupt-Augenmerk liegen neben der Steigerung von Komfort und Sicherheit in der Reduktion von Energiekosten. Kernbestandteil einer Homematic-Installation bildet die Zentrale Steuereinheit CCU2. 
+
 Homematic IP
-Homematic IP basiert in Teilen auf der Produktreihe Homematic und umfasst Produkte aus den Bereichen Raumklima, Sicherheit und Licht. 
-Im Gegensatz zur Produktreihe Homematic liegt der Fokus hier auf der Steuerung über die ebenfalls von eQ-3 entwickelte Smartphone-App. Konfiguration und Bedienung laufen über den von eQ-3 betriebenen Homematic IP Cloud-Service. Die in der Homematic IP Cloud gespeicherten Daten liegen dort in anonymisierter Form vor, da von Seiten des Nutzers keine Daten im Rahmen der Registrierung abgefragt werden. Über die Homematic Zentrale CCU2 können Homematic IP Geräte in ein bestehendes Homematic System eingebunden werden.
+
+Homematic IP basiert in Teilen auf der Produktreihe Homematic und umfasst Produkte aus den Bereichen Raumklima, Sicherheit und Licht. Im Gegensatz zur Produktreihe Homematic liegt der Fokus hier auf der Steuerung über die ebenfalls von eQ-3 entwickelte Smartphone-App. Konfiguration und Bedienung laufen über den von eQ-3 betriebenen Homematic IP Cloud-Service. Die in der Homematic IP Cloud gespeicherten Daten liegen dort in anonymisierter Form vor, da von Seiten des Nutzers keine Daten im Rahmen der Registrierung abgefragt werden. Über die Homematic Zentrale CCU2 können Homematic IP Geräte in ein bestehendes Homematic System eingebunden werden.
+
 MAX!
+
 Die Produktreihe Max konzentriert sich auf die Steuerung von Temperatur in Wohnräumen entweder als lokale Heizkörperregelung oder als zentral gesteuerte Lösung. Zur Realisierung kommen Heizkörperthermostate, Fensterkontakte, Wandthermostate sowie die von eQ-3 entwickelte Smartphone-App zum Einsatz.
 
 
