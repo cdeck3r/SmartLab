@@ -203,7 +203,8 @@ Die ProSyst Gateway Software unterstützt unter anderen folgende Protokolle:
 * KNX
 * X10
 * HomeMatic
-* Webcams etc.     
+* Webcams etc.    
+
 und ermöglicht Fernzugriffe über Java, JCA, JMS, SOAP, REST, JSON-RPC.     
 
 #### Sicherheit
