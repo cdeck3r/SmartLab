@@ -169,11 +169,46 @@ Bisher ist nicht ersichtlich, ob Apple Bridges dieser Art für ihre Umgebung zer
 
 ### Bosch bzw. BSH
 #### Platform
+Mit seiner Bosch IoT Suite hat BSH eine offene IoT Plattform für alle Anwendungsbereiche geschafft. Die Plattform ist as a Service angeboten und gilt als eine Schicht in der breiteren Bosch IoT Cloud Architektur. Die dient dazu Dinge mit dem Internet zu verbinden. Zugeschnitten für die üblichen Anforderungen an IoT Use-Cases und ergänzt durch weitere Dienste wie Datenbanken, Laufzeit und E-Mail bietet Bosch IoT Suite Entwicklern die notwendigen Werkzeuge an, um schnell robuste und skalierbare IoT-Anwendungen zu realisieren. Die Cloud-Services-Palette stellt Lösungen für eine zuverlässige Verwaltung von Geräten, Maschinen und Gateways, für eine Sichere Zugriffsverwaltung, für das Ausführen von Software-Rollout-Prozessen, für die Integration von Drittsystemen und –Diensten sowie für die Datenanalyse zur Verfügung. Außerdem setzt die Plattform auf offene Standards und Open Source als flexible Lösung zur Unterstützung der Integration anderen Plattformen. Vertrauenswürdigkeit und Sicherheit bezeichnen zudem die BSH IoT Suite, denn BSH setzt auch auf höchsten Privacy-Standards und modernen Sicherheitsmechanismen.
+Heute sind Millionen von Geräten und Maschinen bereits über diese Plattform angebunden und die Diensten der Plattform auf dem Marktplatz der Bosch IoT Cloud zugänglich. Bosch plant diese Dienste künftig auf anderen Marktplätzen zu veröffentlichen, die auf Cloud Foundry basieren.     
+
+![bsh_iot_suite.png](https://github.com/cdeck3r/SmartLab/blob/master/bsh_iot_suite.PNG)      
+Abbildung 1: Bosch IoT Suite Architektur
+
 #### Geschaeftsmodell
+In seiner Vision der Zukunft sieht BSH alle seine elektronischen Geräte mit einer Internetfähigkeit ausgestattet, da erst die Vernetzung zwischen diesen die Tür zu weiteren Geschäftsmodellen und innovativen Services führt. In diesem Wandel, wo physische Objekte(Dingen) und logische Service zu Koordinierten Systemen werden beobachtet BSH hier eine neue Art der Wertschöpfung in einem Netz von mehreren Beteiligten, mit multidirektionalen Leistungen und Wertströmen. Für BSH ist der Nutzen von Partnern von Anfang an explizit zu machen, da die Partnerschaft dabei eine große Rolle Spielt. Mit seiner Bosch IoT Suite und Bosch IoT Cloud sorgt BSH für eine gute Konnektivität zwischen Anwendern, Geschäftspartnern, Maschinen, Geräten und Unternehmenssystemen. Der Einsatz von offenen Standards ermöglicht es. Diese Konnektivität ist das wichtigste Erfolgsfaktor für wertschöpfende IoT-Lösungen in verschiedenen Bereichen wie Smart Home, Smart City, Mobilität, Energie, Industrie 4.0 etc… Mit der Bereitstellung von so einer offenen und robusten Plattform können sich Anwender auf wertschöpfende IoT-Lösungen anstatt auf Entwicklung, Hosting, und Wartung der IoT-Plattform konzentrieren. Der Anwender maximiert dabei sein ROI und Bosch macht Einnahmen von der Nutzung seiner Software-Services. Die Abrechnung für die Nutzung der Services wird für den Anwender über sogenannte Service-Pläne, stufenweise nach Anzahl angebundener Geräte, aktiver User, Transaktionen oder Datenvolumen transparent ermittelt. Für eine Nutzung, die über diese Kriterien hinausgeht wird eine Abrechnung über ein sog. Usage-based Preismodell durchgeführt. Für jeder Bosch IoT Suite Service stehen sogenannte Freemium-Pakete für Testphase oder für die Entwicklung von Prototypen zur Verfügung. Um Geschäftsrisiken seiner Kunden zu minimieren unterstützt Bosch IoT Suite innovative Geschäftsmodelle mit dem sogenannten Revenue Sharing.   
+
 #### Produktpalette
-#### Protokolle
+Die IoT-Produktpalette von Bosch zu nennen kann schwierig sein, da Bosch als Hersteller von Elektrogeräten stattet sie heutzutage immer mehr mit einer Internetfähigkeit aus. Von Kühlschränken über Kaffeemaschinen bis hin zu Rauchmeldern kann man sehr viele internetfähige Bosch-Geräte auflisten, was hier nicht sinnvoll wäre. Allerdings kann man IoT-Bereiche nennen bei denen Bosch einen erheblichen Auftritt aufweist.
+* **Bosch Smart Home**: in diesem Bereich stellt BSH eine Vielfalt von internetfähigen Produkten bereit, die zusammen in Paketen aufgestellt und verkauft werden können oder einzeln verkauft werden können.
+     * **Raumklima Starter-Paket**
+     * **Heizung Starter-Paket**
+     * **Sicherheit Starter-Paket** 
+     
+     Diese Pakete beinhalten je nach dem null, einen Stück oder mehrere Stücke dieser Komponenten: Bewegungsmelder, Rauchmelder,              Tür-/Fensterkontakt, Heizkörper-Thermostat. Alle Pakete beinhalten aber obligatorisch einen Smart Home Controller und  und eine          App. Für die Steuerung. Weitere Produkte wie Kameras, Schalter, Zwischenstecker… gehören auch zu dem Bosch Smart Home                    Produktpalette.
+
+* **Industrie 4.0**: hierbei hilft Bosch IoT Lösungen Produktions- und Logistikprozesse zu optimieren. Dieser Bereich geht auch über unseren Projektumfang hinaus.
+* **Etc**…
+
+#### Protokolle und Kompatibilität
+Laut BSH ist die große Menge der zu vernetzten Geräte bei der Umsetzung des Internet der Dinge seiner Erfahrung nach nicht die größte Herausforderung, sondern der zuverlässige Umgang mit den ständig diversen und heterogenen entwickelten Geräten und Maschinen. Dafür bietet BSH eine Softwarelösung, ein Gateway- und Gerätemanagementsoftware, welche die Interaktion zwischen vernetzten Geräten erleichtert. Die Strategie liegt in dem Einsatz von offenen Standards und Open-Source-Technologien wie Linux, Java, Eclipse IDE, OSGi und Cloud Foundary. Übrigens ist der OSGi Standard für die Realisierung der Gateway-Technologie (ProSys Gateway Software) und die technische Fernwartung grundlegend, sodass alle wichtigen IoT-Protokolle für die Integration von Geräten und Sensoren unterstützt werden.
+Die ProSyst Gateway Software unterstützt unter anderen folgende Protokolle:
+* Z-Wave
+* ZigBee
+* DECT
+* BLE
+* wMBUS
+* EnOcean
+* UPnP
+* KNX
+* X10
+* HomeMatic
+* Webcams etc.     
+und ermöglicht Fernzugriffe über Java, JCA, JMS, SOAP, REST, JSON-RPC.     
+
 #### Sicherheit
-#### Kompatibilitaet
+Von BSH werden zu Gunsten der Anwender Datenschutz-Standards streng eingehalten. Einen Überblick der von BSH generierten daten werden Kunden zur Verfügung gestellt sowie die Möglichkeit zu entscheiden, was mit den Daten zu tun ist. Die Daten, die in der Bosch IoT Cloud Deutschland gehostet sind unterliegen dazu dem deutschen Bundesdatenschutzgesetz.
+Was die Sicherheit in der Systemarchitektur der Bosch IoT Cloud geht kümmert sich speziell seine Tochtergesellschaft ESCRYPT darum. Die Anbindung von Dingen (Sensoren, Geräte, etc), von Beteiligten(Akteure, Partner, etc) sowie von weiteren eingebetteten Systemen ist mit einer Public Key Infrastruktur abgesichert, um Sicherheits- und Privacy-Anforderungen zu befriedigen.
 
 ### Google
 #### Platform
