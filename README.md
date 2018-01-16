@@ -220,6 +220,7 @@ Google Home stellt dem Nutzer Funktionen des hauseigenen intelligenten persönli
 Die Home-Systeme ergeben sich aus bewährten und bekannten technischen Systemen. Um die Geschäftsidee einer digitalen Heim-Plattform erfolgreich umsetzen zu können, nutzen sie gelernte Geschäftsmodelle. Die grundlegendsten Prozesse laufen auf den Servern der Unternehmen ab.  Anfragen an das Home-System werden über die Server geschleust. Zur Folge entsteht ein weiterer Layer zwischen Endkunde und Drittanbietern. Diese Anbieter haben einen Zugriff zum System und zusätzlich können Smart-home-Geräte, Fahrzeuge und andere Alltagsgegenstände mit dem System vernetzt werden.
 #### Produktpalette
 ![Google_Produktpalette.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Google_Produktpalette.PNG)  
+Abbildung 2:Google Produktpalette
 #### Protokolle
 Google Home hat eine Smart Home-Anbindung und das kann mit eigenen vernetzte Heimnetzwerk eingebunden werden. Bisher wissen wir nicht, ob Google Standard Protokolle wie ZigBee oder Z-Wave unterstützt. Bestimmt dürfte sein, dass Google sein eigenes Protokoll Weave unterstützen wird, zu guter Letzt unterstützen die Nest-Produkte auch das Protokoll. Google hat versprochen, dass es später eine API geben soll.
 #### Sicherheit
