@@ -223,7 +223,6 @@ Die Home-Systeme ergeben sich aus bewährten und bekannten technischen Systemen.
 Abbildung 2:Google Produktpalette
 #### Protokolle
 Google Home hat eine Smart Home-Anbindung und das kann mit eigenen vernetzte Heimnetzwerk eingebunden werden. Bisher wissen wir nicht, ob Google Standard Protokolle wie ZigBee oder Z-Wave unterstützt. Bestimmt dürfte sein, dass Google sein eigenes Protokoll Weave unterstützen wird, zu guter Letzt unterstützen die Nest-Produkte auch das Protokoll. Google hat versprochen, dass es später eine API geben soll.
-#### Sicherheit
 
 #### Kompatibilitaet
 Google Home hat Ende 2016 den Dienst einigen Drittanbietern freigegeben. Die wichtigsten Vertreter, die mit Google Home kompatibel sind : Honeywell Evohome, Nest, Philips Hue, Samsung Smart-Things sowie Belkin WeMo, TP-Link Kasa, mydlink home und Osram Lightify. 
