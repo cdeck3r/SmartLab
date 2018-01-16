@@ -213,11 +213,21 @@ Was die Sicherheit in der Systemarchitektur der Bosch IoT Cloud geht kümmert si
 
 ### Google
 #### Platform
+Google hat im 2016 sein eigenes Home-System dargestellt. Das System arbeitet auf Basis von Google Assistenten. Es verbindet sich automatisch über WLAN mit dem Google-Konto. Alle Angebote von Chromecast werden auf dem Home-System laufen nach Angaben von Google. 
+Google Home stellt dem Nutzer Funktionen des hauseigenen intelligenten persönlichen Assistenten Google Assistant zur Verfügung. Durch das Sprachbefehlen kann man Fragen oder Befehle an Google Home übermitteln, die das Gerät versucht zu beantworten oder umzusetzen. Drittanbieter können Über die Entwicklerplattform „Actions on Google“ Dienste in Google Home integrieren.
+
 #### Geschaeftsmodell
+Die Home-Systeme ergeben sich aus bewährten und bekannten technischen Systemen. Um die Geschäftsidee einer digitalen Heim-Plattform erfolgreich umsetzen zu können, nutzen sie gelernte Geschäftsmodelle. Die grundlegendsten Prozesse laufen auf den Servern der Unternehmen ab.  Anfragen an das Home-System werden über die Server geschleust. Zur Folge entsteht ein weiterer Layer zwischen Endkunde und Drittanbietern. Diese Anbieter haben einen Zugriff zum System und zusätzlich können Smart-home-Geräte, Fahrzeuge und andere Alltagsgegenstände mit dem System vernetzt werden.
 #### Produktpalette
+
 #### Protokolle
+Google Home hat eine Smart Home-Anbindung und das kann mit eigenen vernetzte Heimnetzwerk eingebunden werden. Bisher wissen wir nicht, ob Google Standard Protokolle wie ZigBee oder Z-Wave unterstützt. Bestimmt dürfte sein, dass Google sein eigenes Protokoll Weave unterstützen wird, zu guter Letzt unterstützen die Nest-Produkte auch das Protokoll. Google hat versprochen, dass es später eine API geben soll.
 #### Sicherheit
+
 #### Kompatibilitaet
+Google Home hat Ende 2016 den Dienst einigen Drittanbietern freigegeben. Die wichtigsten Vertreter, die mit Google Home kompatibel sind : Honeywell Evohome, Nest, Philips Hue, Samsung Smart-Things sowie Belkin WeMo, TP-Link Kasa, mydlink home und Osram Lightify. 
+Eine Lösung, um den Funktionsumfang von Google Home noch weiter zu verbessern, ist der unterstützte Webservice IFTTT, mit dem man Geräte in das System einbindet, die noch nicht von Google Home direkt erkannt werden, beispielsweise die Einbindung des Logitech Harmony Hub. 
+
 
 ### Quivicon
 #### Platform
@@ -271,10 +281,33 @@ Homematic Zentrale CCU2 übernimmt als zentrales Element des Homematic Systems v
 
 ### Afriso
 #### Platform
+AFRISO Smart Home bietet umfassende Lösungen, die mit vielen Produkten anderer Hersteller kommunizieren bzw. zusammenarbeiten können.
+Die Idee von AFRISO für den zuverlässigen Betrieb von Smart Home Lösungen ist ein Gateway zu bilden, das in Zukunft herstellerunabhängig arbeiten wird. Wer eine EnOcean-Signalübertragung nutzt, vermeidet lästiges Batterie-Austauschen, aufwändiges Kabel-Verlegen und hat dank „Plug & Play“ Installation bei der Inbetriebnahme keinen Schlitze-Klopfen-Schmutz oder Bohrstaub im Gebäude. 
+
 #### Geschaeftsmodell
+Nutzer der AFRISOhome App haben weltweit und jederzeit ihr eigenes Heim im Überblick: Fenster sind offen oder geschlossen? Raumtemperatur? Alle Messwerte, Batteriestatus und Verbindungsqualität des Gerätes werden angezeigt.
+Die App bietet die Gelegenheit ganz einfach, dass alle Geräte im Haus zu überwachen und zu steuern. Um man schnell einen Überblick über den Temperaturverlauf, Stromverbrauch oder andere Kennzahlen im Haus zu bekommen werden die Daten in übersichtlichen Diagrammen angezeigt. Durch regelmäßige Updates stehen beständig neue Funktionen und Geräte bereit. Das Anlernen von Sensoren ist einfach und wird Schritt für Schritt durchgeführt. Abläufe können durch das Erstellen von Programmen mit einfachen „Wenn-Und-Dann-Funktionen“ automatisiert werden.
+
 #### Produktpalette
+•	Füllstandmessgeräte
+•	Abfüll-/ Überfüll- Sicherungen und Füllstandregler
+•	Leckanzeigegeräte, Leck- Überwachungssysteme, Tankinnenhüllen
+•	Warn- und Signalgeräte 
+•	Smart Building System
+•	Sicherheit rund um den Tank
+•	Sicherheit rund um die Heizung
+•	Armaturen und hydraulischer Abgleich
+•	Wassertechnik
+•	Servicemessgeräte.
+
 #### Protokolle
+Alle gängigen Geräte, die per EnOcean, Z-Wave, Zigbee, M-Bus oder W-LAN übertragen, kommunizieren mit dem AFRISOhome Gateway, deswegen kann man neben den AFRISO Sensoren und Aktoren schon heute viele weitere Geräte im Zuhause steuern und sind auch in Zukunft herstellerunabhängig.
 #### Sicherheit
+Die Datensicherheit ist hoch, weil alle Daten sind auf dem eigenen Gateway und werden wie beim Onlinebanking nur verschlüsselt übertragen. 
+Das System verzichtet komplett auf eine Cloud-Lösung. Somit kann es auch ohne Internetverbindung betrieben werden.
+
+
 #### Kompatibilitaet
+Das AFRISOhome Gateway bildet die Basisstation für den zuverlässigen Betrieb von kleinen Smart Home Lösungen oder auch sehr komplexen Gebäudemanagementsystemen. Produkten anderer Hersteller, wie z. B. den Inspektionssystemen von Netatmo, den Lichtsteuerungen von Philips Hue und IKEA Tradfri oder der Sprachsteuerung Alexa von Amazon auf Basis von EnOcean, Z-Wave, Zigbee, M-Bus oder W-LAN können mit Dieses Gateway auch zusammenarbeiten.
 
 ## Trends
