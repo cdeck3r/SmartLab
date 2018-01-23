@@ -12,7 +12,7 @@ Student project researching the intersection between Smart Shop and Smart Home; 
     + [Verknüpfung von Smart Home und Smart Shop](#verknüpfung-von-smart-home-und-smart-shop)
   * [Standards](#standards)
 - [Marktanalyse](#marktanalyse)
-  * [Hersteller](#hersteller)
+  * [Smart Home Hersteller](#smart-home-hersteller)
     + [Amazon](#amazon)
       - [Platform](#platform)
       - [Geschaeftsmodell](#geschaeftsmodell)
@@ -69,6 +69,10 @@ Student project researching the intersection between Smart Shop and Smart Home; 
       - [Protokolle](#protokolle-7)
       - [Sicherheit](#sicherheit-7)
       - [Kompatibilitaet](#kompatibilitaet-7)
+    + [Smart Shop Bereich](#smart-shop-bereich)
+      - [Hersteller](#hersteller)
+      - [Produktvielfalt](#produktvielfalt)
+      - [Ausblick (?)](#ausblick----)
   * [Trends](#trends)
 
 # Allgemein
@@ -119,7 +123,7 @@ Um dieses Problem zu beheben gibt es verschiedene Möglichkeiten:
 3.	Eine Kombination aus 1) und 2)
 
 # Marktanalyse
-## Hersteller
+## Smart Home Bereich
 
 ### Amazon
 #### Platform
@@ -337,5 +341,20 @@ Das System verzichtet komplett auf eine Cloud-Lösung. Somit kann es auch ohne I
 
 #### Kompatibilitaet
 Das AFRISOhome Gateway bildet die Basisstation für den zuverlässigen Betrieb von kleinen Smart Home Lösungen oder auch sehr komplexen Gebäudemanagementsystemen. Produkten anderer Hersteller, wie z. B. den Inspektionssystemen von Netatmo, den Lichtsteuerungen von Philips Hue und IKEA Tradfri oder der Sprachsteuerung Alexa von Amazon auf Basis von EnOcean, Z-Wave, Zigbee, M-Bus oder W-LAN können mit Dieses Gateway auch zusammenarbeiten.
+
+### Smart Shop Bereich
+#### Hersteller
+Hier evtl. Aufzählung mit kurzer Beschreibung
+#### Produktvielfalt
+(alle Smart Shop Produkte unabhängig vom Hersteller)
+Was gibt es alles? 
+Dabei zu berücksichtigen:
+- welche Funktionen und Technologien?
+- für Kunden wahrnehmbar oder im Backend(Logistik/...)?
+- wie weit verbreitet/im Einsatz?
+- (feel free)
+- (lasst der Kreativität freien Lauf)
+#### Ausblick (?)
+(vllt auf RFID oder andere mögliche Zukunftstechnologien eingehen)
 
 ## Trends
