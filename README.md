@@ -9,6 +9,7 @@ Student project researching the intersection between Smart Shop and Smart Home; 
   * [Einordnung](#einordnung)
     + [Smart Home](#smart-home)
     + [Smart Shop](#smart-shop)
+    + [Verknüpfung von Smart Home und Smart Shop](#verknüpfung-von-smart-home-und-smart-shop)
   * [Standards](#standards)
 - [Marktanalyse](#marktanalyse)
   * [Hersteller](#hersteller)
@@ -78,6 +79,34 @@ Diese Problematik entstand durch einige Einflussfaktoren. Dazu gehören bspw. de
 Die Anwendung von Smart-Home-Geräten steigt stetig, jedoch hält sich die Akzeptanz der Geräte in Grenzen. Dies ist in den meisten Fällen der Unsicherheit geschuldet, welche bspw. durch eine Vielzahl unterschiedlicher Anbieter und den sich sehr unterscheidenden Protokollen ohne einheitlichen Standard entsteht. Diese Unsicherheit besteht sicherlich auch durch die bisherige Undurchsichtigkeit der Kompatibilitäten und Standards. D.h. dadurch dass sich bisher noch kein Standard richtig durchgesetzt hat, werden Smart-Home-Vorrichtungen vorsichtshalber noch nicht installiert, da die Erweiterbarkeit, sowie die Wartbarkeit für zukünftige Anpassungen des Smart Homes nicht garantiert sind.
 
 ### Smart Shop
+
+### Verknüpfung von Smart Home und Smart Shop
+<Lorem Ipsum> Die Verknüpfung von Smart Home und Smart Shop ist nicht trivial, da die beiden Bereiche i.d.R. nichts miteinander zu tun haben.
+Mit Verknüfung ist gemeint, die beiden Bereiche in irgendeiner Art zusammenzuführen, bzw. durch die Ergänzung des einen durch den anderen einen Mehrwert zu erzeugen. 
+</Lorem Ipsum>
+
+#### Definition übergreifende und ergänzende Anwendung
+Werden Smart Home und Smart Shop in einer Anwendung vereint, d.h. dass beide Bereiche für eine bestimmt Anwendung dienen, kann zwischen übergreifenden und ergänzenden Anwendungen unterschieden werden.
+**Übergreifende Anwendungen** entsprechen dabei Anwendungen, welche sich an Services aus zwei bzw. in unserem Fall beiden Berichen, also Smart Home und Smart Shop, bedienen. (siehe Abbildung)
+**Ergänzende Anwendungen** sind Anwendungen, welche durch eine andere Anwendung an Funktionen erweitert bzw. ergänzt werden, dabei der Informationssfluss jedoch nur in eine Richtung fließt.
+
+![uebergreifende-App.png](https://github.com/cdeck3r/SmartLab/blob/master/uebergreifende-App.png)
+
+Ein Beispiel für eine übergreifende Anwendung:
+Inventarmanagement im Home sowie im Shop-Bereich,
+d.h. Verknüpfung der Informationen zur Bereitstellung von übergreifenden Services, wie z.B.
+* eine Angebotsbenachrichtigung in einer App für einen definierten 	Produktbestand des Smart Home‘s
+* Benachrichtigung des Smart Shops über Kaufprognosen anhand der 	Informationen des Smart Home‘s
+
+
+Die nachfolgende Grafik stellt die Beziehung zwischen Smart Home und Smart Shop im Kontext einer ergänzenden Anwendung dar.
+Dabei ergänzt in Beispiel 1 der Smart Shop das Smart Home, indem Angebotsbenachichtigungen für ausgewählte Produkte an den Kunden in sein Eigenheim gesendet werden.
+In Beispiel 2 ergänzt das Smart Home den Smart Shop, indem die im Smart Home angelegte Einkaufsliste im Shop abgerufen werden kann.
+![ergaenzende-App.png](https://github.com/cdeck3r/SmartLab/blob/master/ergaenzende-App.png)
+
+Diese grundlegende Unterscheidung zwischen einer übergreifenden und einer ergänzenden Anwendung wird benötigt, um uns von vorhandenen Anwendungen und Techniken abgrenzen zu können, denn übergreifende Anwendungen sind noch nicht, bzw. zumindest nicht in der breiten Masse vorhanden. Ergänzende Anwendungen von Smart Home und Smart Shop sind allerdings bereits einige vorhanden.
+
+
 ## Standards
 Wie in der zuvor beschriebenen Einordnung zu erkennen entsteht die größte Unsicherheit der potentiellen Kunden von Smart-Home-Geräten oftmals in der Inkompatibilität von Geräten von unterschiedlichen Herstellern.
 Die Inkompatibilität ist auf Transport-Ebene den unterschiedlichsten Protokollen zuzuschreiben. Hier konkurrieren Funkprotokolle wie bspw. Zigbee, Z-Wave, Wifi, Bluetooth, EnOcean, uvm. miteinander. Zusätzlich stehen die vereinzelt eingesetzten kabelgebundenen Systeme wie Powerline-basierte Lösungen in Konkurrenz.
@@ -88,7 +117,6 @@ Um dieses Problem zu beheben gibt es verschiedene Möglichkeiten:
 1.	Schaffung eines einheitlichen Standards (auf Transportebene – d.h. einheitliches Netzwerkprotokoll, Pairing, Bereitstellung Fähigkeiten, …)
 2.	Verwendung einer Integrationsplattform (Vereinigung der verschiedenen Standards durch entsprechende Adapter – Übersetzung der verschiedenen Protokolle in ‚Einheitssprache‘.)
 3.	Eine Kombination aus 1) und 2)
-
 
 # Marktanalyse
 ## Hersteller
