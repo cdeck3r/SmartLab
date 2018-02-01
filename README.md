@@ -18,14 +18,12 @@ Student project researching the intersection between Smart Shop and Smart Home; 
       - [Geschaeftsmodell](#geschaeftsmodell)
       - [Produktpalette](#produktpalette)
       - [Protokolle](#protokolle)
-      - [Sicherheit](#sicherheit)
       - [Kompatibilitaet](#kompatibilitaet)
     + [Apple](#apple)
       - [Platform](#platform-1)
       - [Geschaeftsmodell](#geschaeftsmodell-1)
       - [Produktpalette](#produktpalette-1)
       - [Protokolle](#protokolle-1)
-      - [Sicherheit](#sicherheit-1)
       - [Kompatibilitaet](#kompatibilitaet-1)
     + [Bosch bzw. BSH](#bosch-bzw-bsh)
       - [Platform](#platform-2)
@@ -53,15 +51,7 @@ Student project researching the intersection between Smart Shop and Smart Home; 
       - [Geschaeftsmodell](#geschaeftsmodell-5)
       - [Produktpalette](#produktpalette-5)
       - [Protokolle](#protokolle-5)
-      - [Sicherheit](#sicherheit-5)
       - [Kompatibilitaet](#kompatibilitaet-5)
-    + [digitalStrom](#digitalstrom)
-      - [Platform](#platform-6)
-      - [Geschaeftsmodell](#geschaeftsmodell-6)
-      - [Produktpalette](#produktpalette-6)
-      - [Protokolle](#protokolle-6)
-      - [Sicherheit](#sicherheit-6)
-      - [Kompatibilitaet](#kompatibilitaet-6)
     + [Afriso](#afriso)
       - [Platform](#platform-7)
       - [Geschaeftsmodell](#geschaeftsmodell-7)
@@ -70,10 +60,22 @@ Student project researching the intersection between Smart Shop and Smart Home; 
       - [Sicherheit](#sicherheit-7)
       - [Kompatibilitaet](#kompatibilitaet-7)
   * [Smart Shop Bereich](#smart-shop-bereich)
-      - [Hersteller](#hersteller)
-      - [Produktvielfalt](#produktvielfalt)
-      - [Ausblick (?)](#ausblick----)
+    + [Einleitung](#einleitung)
+    + [Technologien](#technologien)
+      - [eInk-Schilder](#eink-schilder)
+      - [Smart Bluetooth / Beacons](#smart-bluetooth---beacons)
+      - [Smart Screens (bzw. Gesichtserkennung etc.)](#smart-screens--bzw--gesichtserkennung-etc--)
+      - [](#)
   * [Trends](#trends)
+  
+  ## Smart Shop Bereich
+### Einleitung
+
+### Technologien
+#### eInk-Schilder
+#### Smart Bluetooth / Beacons
+#### Smart Screens (bzw. Gesichtserkennung etc.)
+#### Amazon Go / Sensor Fusion
 
 # Allgemein
 ## Einordnung
@@ -303,14 +305,6 @@ Alle Produkte aus dem Hause eQ-3 wird fein säuberlich gegeneinander abgeschotte
 #### Kompatibilitaet
 Homematic Zentrale CCU2 übernimmt als zentrales Element des Homematic Systems vielfältige Steuer-, Kontroll- und Konfigurationsmöglichkeiten für alle Homematic Geräte einer Installation. Bedienung der Zentrale erfolgt komfortabel am PC oder Tablet über die Homematic Bedienoberfläche WebUI. Konfiguration und Bedienung sowie Statusabfrage aller Homematic Geräte möglich und Komplexe Steueraufgaben sowie individuelle Logikfunktionen können über Zentralenprogramme realisiert werden
 
-### digitalStrom
-#### Platform
-#### Geschaeftsmodell
-#### Produktpalette
-#### Protokolle
-#### Sicherheit
-#### Kompatibilitaet
-
 ### Afriso
 #### Platform
 AFRISO Smart Home bietet umfassende Lösungen, die mit vielen Produkten anderer Hersteller kommunizieren bzw. zusammenarbeiten können.
@@ -340,20 +334,17 @@ Das System verzichtet komplett auf eine Cloud-Lösung. Somit kann es auch ohne I
 
 
 #### Kompatibilitaet
-Das AFRISOhome Gateway bildet die Basisstation für den zuverlässigen Betrieb von kleinen Smart Home Lösungen oder auch sehr komplexen Gebäudemanagementsystemen. Produkten anderer Hersteller, wie z. B. den Inspektionssystemen von Netatmo, den Lichtsteuerungen von Philips Hue und IKEA Tradfri oder der Sprachsteuerung Alexa von Amazon auf Basis von EnOcean, Z-Wave, Zigbee, M-Bus oder W-LAN können mit Dieses Gateway auch zusammenarbeiten.
+Das AFRISOhome Gateway bildet die Basisstation für den zuverlässigen Betrieb von kleinen Smart Home Lösungen oder auch sehr komplexen Gebäudemanagementsystemen. Produkten anderer Hersteller, wie z. B. den Inspektionssystemen von Netatmo, den Lichtsteuerungen von Philips Hue und IKEA Tradfri oder der Sprachsteuerung Alexa von Amazon auf Basis von EnOcean, Z-Wave, Zigbee, M-Bus oder W-LAN können mit diesem Gateway auch zusammenarbeiten.
 
 ## Smart Shop Bereich
-### Hersteller
-Hier evtl. Aufzählung mit kurzer Beschreibung
-### Produktvielfalt
-(alle Smart Shop Produkte unabhängig vom Hersteller)
-Was gibt es alles? 
-Dabei zu berücksichtigen:
-- welche Funktionen und Technologien?
-- für Kunden wahrnehmbar oder im Backend(Logistik/...)?
-- wie weit verbreitet/im Einsatz?
-- (feel free)
-- (lasst der Kreativität freien Lauf)
+### Einleitung
+
+### Technologien
+#### eInk-Schilder
+#### Smart Bluetooth / Beacons
+#### Smart Screens (bzw. Gesichtserkennung etc.)
+#### Amazon Go / Sensor Fusion
+
 ### Ausblick (?)
 (vllt auf RFID oder andere mögliche Zukunftstechnologien eingehen)
 
