@@ -349,7 +349,24 @@ Zusammenfassend kann gesagt werden, dass diese Technologie nicht nur wesentliche
 Die immens spürbaren Einsparpotentiale durch die Vernetzung der Filiale anhand digitaler Preisschilder machen einen Einsatz für Einzelhändler zu einem entscheidenden Wettbewerbsfaktor – d.h. wer dies und dessen Einsatz verpasst, wird sehr wahrscheinlich in Zukunft nicht mehr wettbewerbsfähig sein. 
 
 #### Smart Bluetooth / Beacons
-#### Smart Screens (bzw. Gesichtserkennung etc.)
+#### Smart Screens
+#### Plattform
+Ein Big Player im Bereich des Smart-Retails ist die Westfield Gruppe. Besonders in Australien, Neuseeland und Großbritanien ist die Gruppe einer der größten Betreiber von Einkaufszentren.
+Zu ihrer Technologie-Stack hat das Unternehmen eine neue und mächtige Plattform gebracht: die sogenannten Smart-Screens. Durch Gesichterkennung, Bewegungsmuster und Daten aus dem Smartphone werden vorbeigehenden Passanten personalisierte Werbungen angezeigt.
+Dank miteinander vernetzter Digitalbildschirme in einem Netzwerk kann mit dieser Technologie eine breite geographische Reichweite gedeckt werden. Somit können Westfield-Kunden überall erreicht und angesprochen werden. 175 miteinander verbundene digitale Screens bilden momentan ein Teil von über 1500 andere digitale Smart-Screens und Super-Screen, die positioniert sind, um jede Einkaufstour in 46 Einkaufszentren (39 Westfield Einkaufszentren) durch raffinierte Werbung zu beeinflussen. Super-Screens sind Leistungsstärker und Aussagekräftiger als Smart-Screens. Die sind durch Ihre Helligkeit und Größe Charakterisiert und sind mit Full-Motion-Video, Audioausgabe, Interaktivität, Augmented-Realität und Live-Broadcast-funktionen ausgestattet, was ein reiches Markenerlebnis anregen kann.
+Die Werbung wird nicht nur für Händler in Einkaufszentren gemacht. Der Service kann eigentlich jedem Interessenten zu Nutzen sein. Es werden zum Beispiel auch Inhalte für Immobilien, lokale Kunst oder Live-Events wie Konzerte usw. übertragen.
+Hausmarken und andere Interessenten werden dann Qualität, geographische Deckung, Kontrolle sowie digitale Flexibilität zur Verfügung stehen, was ihre Marketing-Strategien unterstützen und ihre Ziele maximieren wird.
+
+#### Geschäftsmodell
+Westfield Gruppe Vision ist es, Mit über 46 Millionen Einkaufsbesuchen pro Jahr Marken und Werbepartner zu verbinden sowie Energie und Umsätze um über 800 Einzelhandelsdestinationen in ihren Zentren in Neuseeland zu steigen.
+Einzelhändler, Werbungstreibende und andere Interessenten,  können Westfeld Gruppe Kunden und wahrscheinlich ihre eigene Kunden dank dieser Technologie erreichen und live ihnen passende Produkte oder Dienste anbieten. Außerdem werden sie die Möglichkeit haben Vorteile des gesamten Netzwerks zu haben oder nur von ausgewählten Subnetzwerken, die zu ihren Zielen passen. Zusätzlich dazu wird eine digitale Experience für Kunden geschafft.
+
+##### Geräte
+Eine Liste einiger Komponenten kann  anhand der Funktionsweise des Services ermittelt werden:
+*	(Touch-)Screens: Westfield produziert selber seine Screens, um Kontrolle über die Qualität zu gewährleisten.
+*	Kameras
+*	Bewegungssensoren
+
 #### Amazon Go / Sensor Fusion
 
 ### Ausblick (?)
