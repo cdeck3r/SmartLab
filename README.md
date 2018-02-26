@@ -62,7 +62,7 @@ Student project researching the intersection between Smart Shop and Smart Home; 
   * [Smart Shop Bereich](#smart-shop-bereich)
     + [Einleitung](#einleitung)
     + [Technologien](#technologien)
-      - [eInk-Schilder](#eink-schilder)
+      - [Digitale Preisschilder](#digitale-preisschilder)
       - [Smart Bluetooth / Beacons](#smart-bluetooth---beacons)
       - [Smart Screens (bzw. Gesichtserkennung etc.)](#smart-screens--bzw-gesichtserkennung-etc-)
       - [Amazon Go / Sensor Fusion](#amazon-go---sensor-fusion)
@@ -330,9 +330,24 @@ Das AFRISOhome Gateway bildet die Basisstation für den zuverlässigen Betrieb v
 
 ## Smart Shop Bereich
 ### Einleitung
+Die Digitale Transformation ist mittlerweile in jeglichen Bereichen der Wirtschaft von großer Relevanz. Ebenso gilt dies selbstverständlich für den Retail- und Consumer-Bereich, welcher durch den Einsatz neuer technologischer Trends und den durchgeführten Adaptionen an den bestehenden Businessprozessen durch neue elektronische Möglichkeiten zunehmend digitalisiert wird.
+
+Im Smart Shop bzw. Retail-/Consumer-Bereich sind bisher allerdings meist Neuerungen in Form von Technologien o.Ä. nicht für den Kunden sichtbar, sondern finden nur im Backend der Shops statt, wie beispielsweise in der Business Intelligence, der Logistik, sowie Personal- und Ladenverwaltung, sodass Kunden diese Art von digitaler Weiterentwicklung nicht direkt wahrnehmen können. Einfache Beispiele hierfür findet man in der Logistik von Retailunternehmen: Hier kommen oftmals u.a. z.B. Tracking-Systeme  zum Einsatz, welche neue Möglichkeiten bieten, komplette Lieferungsprozesse von Produkten oder bestimmter Produktbündel vom Hersteller bis zum Eintreffen im Einzelhandel nachverfolgen zu können und dabei zusätzliche Informationen für in Beziehung stehende Prozesse liefern kann.
+
+Allerdings gelangen mittlerweile bereits auch einige für den Kunden sichtbare Technologien den Weg in den Retail-Bereich. Eine aktuell in den Medien präsente Anwendung neuer digitaler Technologien und Services und deren Integration in die Geschäftsprozesse, ist beispielsweise der von Amazon vor einigen Wochen für die Öffentlichkeit zugänglich gemachte ‚Amazon Go‘ Shop. Aber auch beispielsweise mittlerweile relativ häufig eingesetzt oder eher angeboten wird ein sogenannter Chatbot, welcher eine automatisierte Kundenberatung, meist auf einer Onlineplattform bereitgestellt, darstellt. Im Bereich der In-Store-Vermarktung können von Kunden bereits relativ häufig sogenannte Smart Screens entdeckt werden, welche das aktuelle Angebot oder Sonderrabatte dem Kunden bereitstellt.
+
+Ein weiterer nicht unwichtiger Bereich, der für den Kunden erkennbaren Einsatz von neuen  Technologien oder durch neue Technologien entstandenen neuen Businessprozessen, könnten zukünftig zudem neue Bezahlverfahren werden. In diesem Bereich gibt es allerdings bisher noch keine breite Anwendung. Vorreiter stellt hier allerdings ebenfalls der zuvor erwähnte Amazon Go Shop dar, denn dort kann bereits heute kontaktlos bezahlt werden. Diese oder auch weitere ähnliche Anwendungen im Bezahlverfahren sind in naher Zukunft vermutlich unabdingbar, um Kunden nicht an ggf. technologisch weiter fortgeschrittene Konkurrenz zu verlieren.
 
 ### Technologien
-#### eInk-Schilder
+#### Digitale Preisschilder
+Während die meisten bisher im Einsatz befindlichen Technologien vom Kunden überwiegend unbemerkt bleiben, stellen digitale Preisschilder (auch ‚Electronic Shelfs‘ genannt), einen bedeutenden Kontaktpunkt zwischen Kunden und Händlern dar. ‚Elektronic Shelfs‘ stellen digitale Preisschilder dar, welche an die IT-Infrastruktur des anbietenden Einzelhändlers gekoppelt sind. Zudem stellen diese Schilder die Preise digital auf einem Display dar, wodurch zeitintensive Arbeiten wie neue Preisauszeichnungen nicht mehr manuell gesteckt, sondern zentral und automatisiert über die IT-Infrastruktur des Händlers gesteuert und somit immer aktuell gehalten werden können. Insbesondere beim Verkauf von Waren mit häufigen Preisschwankungen stellt diese Technologie ein hohes Einsparpotential dar, da in diesem Fall spürbar der Personalaufwand verringert wird.
+
+‚Electronic Shelfs‘ bieten allerdings jede Menge weitere Potentiale der Optimierung. Beispiele hierfür sind die bereits angeschnittene Preisanpassung in Echtzeit, oder auch die Möglichkeit der Darstellung von Zusatzinformationen. Ebenfalls vorstellbar ist es, dass der Kunde zukünftig direkt mit dem Preisschild interagieren kann um bspw. weitere Informationen zu erhalten. Außerdem wird durch dessen Einsatz die Fehlerquote von falschen Preisauszeichnungen deutlich gesenkt.
+Durch den Einsatz solcher Technologien sind aber auch komplett neue Preismodelle vorstellbar, bzw. die Dynamik von Preisen kann beliebig steigen. Dadurch könnte man bspw. Preise abhängig von der Uhrzeit anpassen. Eine gute Anwendung hierfür könnte MHD-Ware sein wie z.B. Obst und Gemüse, welches auf Basis des MHDs automatisiert reduziert werden kann, was i.d.R. gar nicht, oder manuell von Marktpersonal durchgeführt werden muss.
+
+Zusammenfassend kann gesagt werden, dass diese Technologie nicht nur wesentliche Verbesserungen bestehender Prozesse bietet, sondern ebenfalls teils komplett neue Berührungspunkte mit dem Kunden schafft und somit völlig neue Prozesse generiert.
+Die immens spürbaren Einsparpotentiale durch die Vernetzung der Filiale anhand digitaler Preisschilder machen einen Einsatz für Einzelhändler zu einem entscheidenden Wettbewerbsfaktor – d.h. wer dies und dessen Einsatz verpasst, wird sehr wahrscheinlich in Zukunft nicht mehr wettbewerbsfähig sein. 
+
 #### Smart Bluetooth / Beacons
 #### Smart Screens (bzw. Gesichtserkennung etc.)
 #### Amazon Go / Sensor Fusion
