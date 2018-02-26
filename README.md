@@ -362,6 +362,8 @@ Hausmarken und andere Interessenten werden dann Qualität, geographische Deckung
 Westfield Gruppe Vision ist es, Mit über 46 Millionen Einkaufsbesuchen pro Jahr Marken und Werbepartner zu verbinden sowie Energie und Umsätze um über 800 Einzelhandelsdestinationen in ihren Zentren in Neuseeland zu steigen.
 Einzelhändler, Werbungstreibende und andere Interessenten,  können Westfeld Gruppe Kunden und wahrscheinlich ihre eigene Kunden dank dieser Technologie erreichen und live ihnen passende Produkte oder Dienste anbieten. Außerdem werden sie die Möglichkeit haben Vorteile des gesamten Netzwerks zu haben oder nur von ausgewählten Subnetzwerken, die zu ihren Zielen passen. Zusätzlich dazu wird eine digitale Experience für Kunden geschafft.
 
+Auf den Smart-Screens können bereits wichtige Marken wie Nespresso, Sky TV, Nivea, Gehalten, Fisher & Paykel und Vodafone als Startpartner von Westfield Smart-Screen Netwerk gesehen werden.
+
 ##### Geräte
 Eine Liste einiger Komponenten kann  anhand der Funktionsweise des Services ermittelt werden:
 *	(Touch-)Screens: Westfield produziert selber seine Screens, um Kontrolle über die Qualität zu gewährleisten.
