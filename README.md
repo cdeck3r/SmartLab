@@ -382,10 +382,10 @@ Die Daten über den Nutzer spielen nämlich womöglich eine zentrale Rolle für 
 Das muss man sich dann – grob vereinfacht - so vorstellen:
 
 <li> Der Kunden greift sich eine rote Flasche aus dem Regal. </li>
-Die Kameras erkennen eine rote Flasche und registrieren, dass der Kunde das Produkt behält. Die Kameras erkennen aber nicht genau das Produkt, weil ein anderer Kunde die Sicht verdeckt.
-Der Kunde kauft regelmäßig Ketchup.
-Der Ketchup steht normalweise genau an dieser Stelle.
-Das System fügt Ketchup zum Warenkorb hinzu.
+<li> Die Kameras erkennen eine rote Flasche und registrieren, dass der Kunde das Produkt behält. Die Kameras erkennen aber nicht genau <li> das Produkt, weil ein anderer Kunde die Sicht verdeckt. </li>
+<li> Der Kunde kauft regelmäßig Ketchup. </li>
+<li> Der Ketchup steht normalweise genau an dieser Stelle. </li>
+<li> Das System fügt Ketchup zum Warenkorb hinzu. </li>
 
 
 #### Geschäftsmodell
