@@ -349,6 +349,44 @@ Zusammenfassend kann gesagt werden, dass diese Technologie nicht nur wesentliche
 Die immens spürbaren Einsparpotentiale durch die Vernetzung der Filiale anhand digitaler Preisschilder machen einen Einsatz für Einzelhändler zu einem entscheidenden Wettbewerbsfaktor – d.h. wer dies und dessen Einsatz verpasst, wird sehr wahrscheinlich in Zukunft nicht mehr wettbewerbsfähig sein. 
 
 #### Smart Bluetooth / Beacons
+Beacons auf Basis von BLE 4.0 ermöglichen, verknüpft mit Smartphone-Apps und Online-Diensten, neue Assistenz- und Analysefunktionen rund ums Einkaufen. Kunden wie auch Händler profitieren von personalisierter Produktwerbung, Indoor-Navigation, Asset Tracking und automatischer Bezahlung. Der DA14580 von Dialog Semiconductor eignet sich für den Einsatz als Beacon
+
+##### BLE 4.0
+
+Bluetooth Low Energy, Bluetooth LE (kurz BLE), Bluetooth Smart ist eine Funktechnik, mit der sich Geräte in einer Umgebung von etwa 10 Metern vernetzen lassen (siehe auch Rechnernetz). Im Vergleich zum „klassischen“ Bluetooth soll BLE deutlich geringeren Stromverbrauch und geringere Kosten mit einem ähnlichen Kommunikationsbereich haben. Technisch ist Bluetooth Smart nicht rückwärtskompatibel, neuere Bluetooth-Geräte müssen zusätzlich den LE-Protokollstapel (Kommunikationsprotokoll)  unterstützen, um sich verbinden zu können
+
+###### Technologie und Einsatzmöglichkeiten
+
+Bluetooth-fähige Smartphones und Tablets sind heute ein ständiger Begleiter bei Einkäufen. Mithilfe von Miniatur-Bluetooth-Sendern, sogenannten Bluetooth Beacons, lassen sich Kunden in Einkaufszentren und einzelnen Geschäften verfolgen (Tracking). Damit bietet sich Händlern die einmalige Gelegenheit, den Käufern genau am Standort des Produktes Werbung zuzusenden. Ein Anbieter dieser neuen Einkaufstechnik argumentiert: „Binden Sie Ihre Kunden mit personalisierten Empfehlungen – in Echtzeit und zum idealen Kaufzeitpunkt.“
+Mit dem Advertising-Dienst sind weitere Dienste wie Indoor-Navigation, Asset Tracking und mobiles Bezahlen verknüpfbar.
+Nutzen Kunden diese Technik beim Einkaufen, können sie sicher sein, kein Angebot mehr zu verpassen. Sie können frei entscheiden, ob das Smartphone eingeschaltet und Bluetooth sowie die Apps aktiviert sein sollen, die auf die Push-Nachrichten der Händler reagieren. Händler profitieren von dieser kostengünstigen und kontextbezogenen Methode, ihre Angebote bekannt zu machen. Viel wichtiger ist jedoch, dass sie Daten über das Kundenverhalten sammeln und analysieren können: Bewegungsabläufe im Geschäft und Kaufgewohnheiten. Stehen Daten von Tausenden von Kunden zur Verfügung, werden die Informationen sehr aussagekräftig.
+Technologie: In fast jedem Fall ist es Bluetooth Low Energy (BLE), oft auch als Bluetooth Smart bezeichnet. Die gleiche Technik findet sich in Proximity-Tags, die beim Eintritt in den Funkbereich eine Nachricht an das Smartphone oder einen anderen Empfänger senden
+
+##### Bluetooth Smart vs. Classic Bluetooth
+
+Was heute als Classic Bluetooth bezeichnet wird, eignet sich wegen des viel zu hohen Strombedarfs nicht für Beacons. Die Place-and-forget-Installation erfordert eine Betriebsdauer über Monate und Jahre bei extrem geringer Stromaufnahme. 
+Die Bluetooth-Smart-Funktechnik ist in batteriebetriebene, eigenständige Miniatursender integriert, welche spezielle IDs  aussenden, über die einen Smartphone-App und ein Online-Dienst Werbung an Käufer senden, sobald sie in eine Reichweite zwischen 5 und 50 m gelangen.
+Beacons müssen klein, unauffällig und kostengünstig sein, in einer vorhandenen Infrastruktur uneingeschränkt funktionieren und platzierbar sein
+Bluetooth Smart unterscheidet sich von Classic Bluetooth in zahlreichen Merkmalen und ist daher für Beacons besser geeignet:
+•	Classic Bluetooth benötigt ca. 40 mA Strom bei 3 V. Hochqualitative Bluetooth-Smart-Funktechnik mit 0 dBm Ausgangsleistung (ideal für die meisten Beacons) kann mit weniger als 5 mA bei 3 V noch eine Reichweite von 50 m erzielen.
+•	Der Sleep-Modus von Bluetooth-Smart-Geräten benötigt in einigen Anwendungen gerade einmal ein Hundertstel vom durchschnittlichen Stromverbrauch des Classic Bluetooth.
+•	Die Wake-up-Zeit beträgt nur 6 ms anstatt 100 ms bei Classic Bluetooth.
+•	Authentifizierte Daten lassen sich innerhalb von nur 3 ms senden, anstatt 1 s bei Classic Bluetooth.
+•	128-Bit-Banking-Level-Sicherheit (AES-128) schützt die Daten.
+
+##### Beacon
+
+Mit Beacon wird ein Sender oder Empfänger bezeichnet, der auf der Bluetooth Low Energy (BLE) oder auch Bluetooth Smart Technologie basiert. Im Grunde genommen ist dies eine Funktechnologie, die als Weiterentwicklung von Bluetooth verstanden werden kann. Sie ist schon seit einigen Jahren bekannt, jedoch mit Hauptvermarkter Apple unter dem Namen iBeacon einem größeren Publikum bekannt geworden. Smartphones und Tablets sind ab iOS7 beziehungsweise Android 4.3 mit dieser Technologie ausgestattet und somit für Beacons empfänglich
+
+##### Technische Aspekte der Beacon-Technologie
+Wie bei jeder Funktechnik braucht man zunächst einen Sender und einen Empfänger: diese werden Beacons genannt. Deren Reichweite beträgt ungefähr zehn Meter, es wird aber auch von bis zu 50 Metern gesprochen, je nach Entwicklungsstand und Hersteller. Bei der Datenübertragung zwischen den Geräten wird weit weniger Energie aufgewandt als bei dem Vorgänger Bluetooth, was beispielsweise einen geringen Batterieverbrauch beim Smartphone zur Folge hat. Auch die Kosten des Transfers bleiben niedrig. Große Datenmengen eignen sich nicht für den Austausch, weil die Übertragungsrate relativ gering ist. Die Beacons selbst werden per Batterie oder seltener direktem Stromanschluss betrieben.
+Ein Gerät kann erst von einem Beacon angesprochen werden, wenn eine entsprechende Software installiert ist. Sobald sich ein kompatibles Smartphone oder Tablet dann in dem Wirkungskreis eines Beacons befindet, können diese Pushmitteilungen verschicken. Falls mehrere Beacons im Wirkungsradius platziert sind, lässt sich auch der Standort des Empfängers relativ genau ermitteln.
+
+##### Einsatz der Beacons im Marketing
+Es sind bereits vielerorts Beacons im Einsatz, um Besucher im Laden zu lokalisieren und ortsabhängige Angebote auf das jeweilige Endgerät zu schicken. So finden sich zum Beispiel Beacons im Hamburger Flughafen im Einsatz, die die verbrachte Zeit in verschiedenen Geschäften messen und mit Prämien belohnen. 
+Manche Veranstaltungen navigieren die Besucher wiederum mithilfe der Beacon-Technologie. Diese Verwendung ist insbesondere bei Events in der Digitalbranche beobachten. 
+Darüber hinaus arbeitet PayPal mit PayPal Beacon an einer automatischen Bezahlung. Diese Innovation verbindet den Kunden mit dem Geschäft und erlaubt die automatische Abwicklung via PayPal ohne mit der Kasse in Berührung zu kommen
+
 #### Smart Screens
 #### Plattform
 Ein Big Player im Bereich des Smart-Retails ist die Westfield Gruppe. Besonders in Australien, Neuseeland und Großbritanien ist die Gruppe einer der größten Betreiber von Einkaufszentren.
