@@ -371,6 +371,33 @@ Eine Liste einiger Komponenten kann  anhand der Funktionsweise des Services ermi
 *	Bewegungssensoren
 
 #### Amazon Go / Sensor Fusion
+#### Plattform
+
+Amazon Go, der neue Convenience-Store für Lebensmittel, Snacks und Getränke in Seattle (2131 Seventh Avenue) ist vermutlich weltweit der fortschrittlichste Supermarkt. Denn er kommt ohne klassische Kassen aus. Die Kunden checken per App und QR-Code-Scan im Laden ein, Sensoren – Amazon raunt im Video von „Sensor Fusion“ - erkennen, welche Produkte aus dem Regal genommen werden. Die Technik erlaubt, dass der Kunde den Laden dann einfach mit der Ware verlassen kann. Die Abrechnung erfolgt wiederum per App.
+Amazon selbst begnügt sich mit nebulösen Schlagworten, spricht von “computer vision, sensor fusion and deep learning” und lässt lediglich durchblicken, dass man Technologien einsetze, wie man sie von selbstfahrenden Autos kennt.
+Kameras und eine Kombination unterschiedlicher Sensoren füttern also einen lernenden Algorithmus, der erkennen soll, welche Produkte Kunden aus dem Regal nehmen – oder wieder zurückstellen.
+
+Die Daten über den Nutzer spielen nämlich womöglich eine zentrale Rolle für die künstliche Intelligenz des lernenden Algorithmus und die Erkennung der Artikel.
+
+Das muss man sich dann – grob vereinfacht - so vorstellen:
+
+<li> Der Kunden greift sich eine rote Flasche aus dem Regal. </li>
+Die Kameras erkennen eine rote Flasche und registrieren, dass der Kunde das Produkt behält. Die Kameras erkennen aber nicht genau das Produkt, weil ein anderer Kunde die Sicht verdeckt.
+Der Kunde kauft regelmäßig Ketchup.
+Der Ketchup steht normalweise genau an dieser Stelle.
+Das System fügt Ketchup zum Warenkorb hinzu.
+
+
+#### Geschäftsmodell
+
+Amazon-Pläne bis zu 2000 Ladeneröffnungen in den kommenden Jahren rund um Buchgeschäfte, Pick-up-Stores (der erste Laden ist am 22.01.2018 in Seattle schon geöffnet), und Amazon fresh-Shops, werden mit der neuen Technik zu einer weitaus gewaltigeren Bedrohung denn je. Amazon könnte die Expansion nämlich mit einem Bruchteil der Personalkosten wuppen.
+
+Das Konzept eignet sich nicht nur für Lebensmittel, sondern lässt sich vermutlich auch auf andere Branchen wie Mode, Elektronik, Spielwaren, Kosmetik oder Bücher übertragen. 
+
+##### Geräte
+
+Damit man bei Amazon Go einkaufen kann, benötigt man : 
+Die Amazon-Go-App für iPhone und Android auf dem Smartphone (um sich Zugang zum Laden zu verschaffen)
 
 ### Ausblick (?)
 (vllt auf RFID oder andere mögliche Zukunftstechnologien eingehen)
