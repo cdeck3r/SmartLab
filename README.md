@@ -398,7 +398,9 @@ Das Konzept eignet sich nicht nur für Lebensmittel, sondern lässt sich vermutl
 ##### Geräte
 
 Damit man bei Amazon Go einkaufen kann, benötigt man : 
-Die Amazon-Go-App für iPhone und Android auf dem Smartphone (um sich Zugang zum Laden zu verschaffen)
+<li> Die Amazon-Go-App für iPhone und Android auf dem Smartphone (um sich Zugang zum Laden zu verschaffen) </li>
+<li> Kameras </li>
+<li> Bewegungssensoren </li>
 
 ### Ausblick (?)
 (vllt auf RFID oder andere mögliche Zukunftstechnologien eingehen)
