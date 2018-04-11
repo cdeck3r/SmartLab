@@ -39,13 +39,6 @@ Student project researching the intersection between Smart Shop and Smart Home; 
       - [Produktpalette](#produktpalette-3)
       - [Protokolle](#protokolle-2)
       - [Kompatibilitaet](#kompatibilitaet-2)
-    + [Quivicon](#quivicon)
-      - [Platform](#platform-4)
-      - [Geschaeftsmodell](#geschaeftsmodell-4)
-      - [Produktpalette](#produktpalette-4)
-      - [Protokolle](#protokolle-3)
-      - [Sicherheit](#sicherheit-1)
-      - [Kompatibilitaet](#kompatibilitaet-3)
     + [eQ-3](#eq-3)
       - [Platform](#platform-5)
       - [Geschaeftsmodell](#geschaeftsmodell-5)
@@ -253,15 +246,6 @@ Google Home hat eine Smart Home-Anbindung und das kann mit eigenen vernetzte Hei
 #### Kompatibilitaet
 Google Home hat Ende 2016 den Dienst einigen Drittanbietern freigegeben. Die wichtigsten Vertreter, die mit Google Home kompatibel sind : Honeywell Evohome, Nest, Philips Hue, Samsung Smart-Things sowie Belkin WeMo, TP-Link Kasa, mydlink home und Osram Lightify. 
 Eine Lösung, um den Funktionsumfang von Google Home noch weiter zu verbessern, ist der unterstützte Webservice IFTTT, mit dem man Geräte in das System einbindet, die noch nicht von Google Home direkt erkannt werden, beispielsweise die Einbindung des Logitech Harmony Hub. 
-
-
-### Quivicon
-#### Platform
-#### Geschaeftsmodell
-#### Produktpalette
-#### Protokolle
-#### Sicherheit
-#### Kompatibilitaet
 
 ### eQ-3
 #### Platform
