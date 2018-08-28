@@ -354,49 +354,49 @@ Einkaufsliste Generator stellt die fertige Einkaufsliste vor.
 
 ![Stufe2.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe2.PNG) 
 
-### Kunde:
+#### Kunde:
 Der Kunde definiert die Anforderungen an den Input (KundenID, Produktdaten, Datum)
 Supermarkt Kassensystem:
 Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
-DB:
+#### DB:
 Kaufland Datenbank leitet alle benötigte Inputs an Einkauf Analyzer und Warenkorb Generator
 weiter.
-Einkauf Analyzer:
+#### Einkauf Analyzer:
 Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID, KaufDatum)
 Als Outputs: Kundenspezifisches Kaufverhalten.
-Warenkorb Generator:
+#### Warenkorb Generator:
 Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID)
 Als Outputs: Kundenspezifischer Standardwarenkorb.
-Einkaufsliste Generator:
+#### Einkaufsliste Generator:
 Generierung Anhand vom Standardwarenkorb, Mindesthaltbarkeitsdatum und das Kaufverhalten
 von dem Kunden.
-Einkaufliste:
+#### Einkaufliste:
 Fertige spezialisierte Einkaufsliste nach Kaufverhalten der Kunden.
 
 ### Architektur: Stufe 3
 
 ![Stufe3.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe3.PNG) 
 
-Kunde:
+#### Kunde:
 Der Kunde definiert die Anforderungen an den Input(KundenID, Produktdaten, Datum)
 Supermarkt Kassensystem:
 Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
-DB:
+#### DB:
 Kaufland Datenbank leitet alle benötigte Inputs an Einkauf Analyzer und Warenkorb Generator
 weiter.
-Einkauf Analyzer:
+#### Einkauf Analyzer:
 Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID, KaufDatum)
 Als Outputs: Kundenspezifisches Kaufverhalten.
-Warenkorb Generator:
+#### Warenkorb Generator:
 Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID)
 Als Outputs: Kundenspezifischer Standardwarenkorb.
-Smart-Home:
+#### Smart-Home:
 Smarte Geräte bzw. Systeme oder Produkte liefern den Inputs (ProduktID, Produkt-verbrauch) an
 Einkaufsliste Generator.
-Einkaufsliste Generator:
+#### Einkaufsliste Generator:
 Generierung Anhand vom Standardwarenkorb, Mindesthaltbarkeitsdatum, Smart-Home Geräte und
 das Kaufverhalten von dem Kunden.
-Einkaufliste:
+#### Einkaufliste:
 Fertige spezialisierte Einkaufsliste nach Kaufverhalten der Kunden.
 
 ### Fazit:
