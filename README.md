@@ -312,7 +312,29 @@ Das System verzichtet komplett auf eine Cloud-Lösung. Somit kann es auch ohne I
 
 #### Kompatibilitaet
 Das AFRISOhome Gateway bildet die Basisstation für den zuverlässigen Betrieb von kleinen Smart Home Lösungen oder auch sehr komplexen Gebäudemanagementsystemen. Produkten anderer Hersteller, wie z. B. den Inspektionssystemen von Netatmo, den Lichtsteuerungen von Philips Hue und IKEA Tradfri oder der Sprachsteuerung Alexa von Amazon auf Basis von EnOcean, Z-Wave, Zigbee, M-Bus oder W-LAN können mit diesem Gateway auch zusammenarbeiten.
-# Geschäftsmodell:
+## Geschäftsmodell:
+Einer der Hauptnutzen des Internets der Dinge ist zudem die Möglichkeit, mit digital vernetzten
+Produkten, Services und Lösungen als Hersteller tiefer in die Wertschöpfungsstrukturen seiner
+Kunden einzudringen, um diesen ihre Arbeit und die Arbeit untereinander zu erleichtern. Viele
+Kunden agieren jedoch noch sehr traditionell in ihren jeweiligen Branchen. Sie vergessen dabei oft,
+dass im Zuge der digitalen Transformation immer mehr neue Spieler das Feld betreten, welche
+etablierte Anbieter durch ihre Innovationskraft und Agilität unter Druck setzen.
+Kaum jemand kann sich alle Artikel für den Wocheneinkauf merken – daher gibt es Einkaufszettel.
+Die papierne Variante hat allerdings entscheidende Nachteile: Ständig muss man neue Zettel
+schreiben, obwohl im Kern dieselben Produkte gekauft werden.
+
+#### Idee: Erstellung einer intelligenten digitalen Einkaufsliste mit folgenden Funktionen:
+* automatisches Befüllen der Einkaufsliste
+* dynamische Anpassung der Liste
+* Kategorisierung der Produkte nach Dringlichkeit
+
+Smart Home und Smart Shop ist eine super Sache zur Erhöhung des Komforts, der Einbruchsicherheit und der Energieeinsparung. Die technische Revolution im Supermarkt sowie Zuhause ist eher unauffällig. Sie wird deutlich dadurch, dass viele Informationen digital zu mir kommen.
+
+#### Diese Funktionen werden anhand folgender Informationen realisiert:
+* verfügbare Angebote
+* Kaufverhalten des Users
+* Haltbarkeitsdaten gekaufter Produkte
+* Verbrauchsdaten gekaufter Produkte
 
 ## Smart Shop Bereich
 ### Einleitung
