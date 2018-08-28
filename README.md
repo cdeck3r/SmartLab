@@ -341,20 +341,20 @@ Smart Home und Smart Shop ist eine super Sache zur Erhöhung des Komforts, der E
 
 ![Stufe1.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe1.PNG) 
 
-Kunde:
+## Kunde:
 User definiert Standardwarenkorb.
-DB: (MHD Statistiken):
+## DB: (MHD Statistiken):
 Datenbank enthält die Mindesthaltbarkeitsdatum-Statistiken.
-Einkaufsliste Generator:
+## Einkaufsliste Generator:
 Einkaufsliste wird automatisch nach Kunden und Datenbanken Statistiken generiert.
-Einkaufliste:
+## Einkaufliste:
 Einkaufsliste Generator stellt die fertige Einkaufsliste vor.
 
 ### Architektur: Stufe 2
 
 ![Stufe2.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe2.PNG) 
 
-#### Kunde:
+### Kunde:
 Der Kunde definiert die Anforderungen an den Input (KundenID, Produktdaten, Datum)
 Supermarkt Kassensystem:
 Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
