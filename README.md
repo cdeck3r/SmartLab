@@ -240,6 +240,7 @@ Google Home stellt dem Nutzer Funktionen des hauseigenen intelligenten persönli
 Die Home-Systeme ergeben sich aus bewährten und bekannten technischen Systemen. Um die Geschäftsidee einer digitalen Heim-Plattform erfolgreich umsetzen zu können, nutzen sie gelernte Geschäftsmodelle. Die grundlegendsten Prozesse laufen auf den Servern der Unternehmen ab.  Anfragen an das Home-System werden über die Server geschleust. Zur Folge entsteht ein weiterer Layer zwischen Endkunde und Drittanbietern. Diese Anbieter haben einen Zugriff zum System und zusätzlich können Smart-home-Geräte, Fahrzeuge und andere Alltagsgegenstände mit dem System vernetzt werden.
 #### Produktpalette
 ![Google_Produktpalette.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Google_Produktpalette.PNG)  
+
 Abbildung 2:Google Produktpalette
 #### Protokolle
 Google Home hat eine Smart Home-Anbindung und das kann mit eigenen vernetzte Heimnetzwerk eingebunden werden. Bisher wissen wir nicht, ob Google Standard Protokolle wie ZigBee oder Z-Wave unterstützt. Bestimmt dürfte sein, dass Google sein eigenes Protokoll Weave unterstützen wird, zu guter Letzt unterstützen die Nest-Produkte auch das Protokoll. Google hat versprochen, dass es später eine API geben soll.
@@ -335,6 +336,80 @@ Smart Home und Smart Shop ist eine super Sache zur Erhöhung des Komforts, der E
 * Kaufverhalten des Users
 * Haltbarkeitsdaten gekaufter Produkte
 * Verbrauchsdaten gekaufter Produkte
+
+### Architektur: Stufe 1
+
+![Stufe1.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe1.PNG) 
+
+Kunde:
+User definiert Standardwarenkorb.
+DB: (MHD Statistiken):
+Datenbank enthält die Mindesthaltbarkeitsdatum-Statistiken.
+Einkaufsliste Generator:
+Einkaufsliste wird automatisch nach Kunden und Datenbanken Statistiken generiert.
+Einkaufliste:
+Einkaufsliste Generator stellt die fertige Einkaufsliste vor.
+
+### Architektur: Stufe 2
+
+![Stufe2.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe2.PNG) 
+
+Kunde:
+Der Kunde definiert die Anforderungen an den Input (KundenID, Produktdaten, Datum)
+Supermarkt Kassensystem:
+Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
+DB:
+Kaufland Datenbank leitet alle benötigte Inputs an Einkauf Analyzer und Warenkorb Generator
+weiter.
+Einkauf Analyzer:
+Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID, KaufDatum)
+Als Outputs: Kundenspezifisches Kaufverhalten.
+Warenkorb Generator:
+Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID)
+Als Outputs: Kundenspezifischer Standardwarenkorb.
+Einkaufsliste Generator:
+Generierung Anhand vom Standardwarenkorb, Mindesthaltbarkeitsdatum und das Kaufverhalten
+von dem Kunden.
+Einkaufliste:
+Fertige spezialisierte Einkaufsliste nach Kaufverhalten der Kunden.
+
+### Architektur: Stufe 3
+
+![Stufe3.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe3.PNG) 
+
+Kunde:
+Der Kunde definiert die Anforderungen an den Input(KundenID, Produktdaten, Datum)
+Supermarkt Kassensystem:
+Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
+DB:
+Kaufland Datenbank leitet alle benötigte Inputs an Einkauf Analyzer und Warenkorb Generator
+weiter.
+Einkauf Analyzer:
+Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID, KaufDatum)
+Als Outputs: Kundenspezifisches Kaufverhalten.
+Warenkorb Generator:
+Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID)
+Als Outputs: Kundenspezifischer Standardwarenkorb.
+Smart-Home:
+Smarte Geräte bzw. Systeme oder Produkte liefern den Inputs (ProduktID, Produkt-verbrauch) an
+Einkaufsliste Generator.
+Einkaufsliste Generator:
+Generierung Anhand vom Standardwarenkorb, Mindesthaltbarkeitsdatum, Smart-Home Geräte und
+das Kaufverhalten von dem Kunden.
+Einkaufliste:
+Fertige spezialisierte Einkaufsliste nach Kaufverhalten der Kunden.
+
+### Fazit:
+Die digitale Transformation ist wesentlicher Treiber disruptiver Veränderungen in der
+Unternehmenswelt und unserer Gesellschaft. Diese Transformation basiert auf darunterliegenden
+Enabler-Technologien wie dem Internet der Dinge, der Vernetzung oder Big Data. Hochrechnungen in
+Bezug auf das Potenzial dieser Technologien versprechen enorme Chancen, deren Nutzen gehoben
+und deren Hürden abgebaut werden müssen. Ansätze dafür, bspw. in Form von Förderprogrammen
+oder Best Practices von sogenannten Pionier-Unternehmen (die in Sachen Digitalisierung schon sehr
+weit sind), sind vorhanden. Durch das Internet der Dinge entstehen Daten, die gesammelt, analysiert
+und kombiniert die Grundlage neuer, datenbasierter Services, der Smart Services, bilden. Wie diese
+Smart Services konzipiert, entwickelt und wertschöpfend etabliert werden können, darum geht es in
+diesem Buch.
 
 ## Smart Shop Bereich
 ### Einleitung
