@@ -354,7 +354,7 @@ Einkaufsliste Generator stellt die fertige Einkaufsliste vor.
 
 ![Stufe2.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe2.PNG) 
 
-Kunde:
+#### Kunde:
 Der Kunde definiert die Anforderungen an den Input (KundenID, Produktdaten, Datum)
 Supermarkt Kassensystem:
 Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
