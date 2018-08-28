@@ -52,6 +52,7 @@ Student project researching the intersection between Smart Shop and Smart Home; 
       - [Protokolle](#protokolle-5)
       - [Sicherheit](#sicherheit-2)
       - [Kompatibilitaet](#kompatibilitaet-5)
+ - [Geschäftsmodell:](#Geschäftsmodell:)
   * [Smart Shop Bereich](#smart-shop-bereich)
     + [Einleitung](#einleitung)
     + [Technologien](#technologien)
@@ -311,6 +312,7 @@ Das System verzichtet komplett auf eine Cloud-Lösung. Somit kann es auch ohne I
 
 #### Kompatibilitaet
 Das AFRISOhome Gateway bildet die Basisstation für den zuverlässigen Betrieb von kleinen Smart Home Lösungen oder auch sehr komplexen Gebäudemanagementsystemen. Produkten anderer Hersteller, wie z. B. den Inspektionssystemen von Netatmo, den Lichtsteuerungen von Philips Hue und IKEA Tradfri oder der Sprachsteuerung Alexa von Amazon auf Basis von EnOcean, Z-Wave, Zigbee, M-Bus oder W-LAN können mit diesem Gateway auch zusammenarbeiten.
+# Geschäftsmodell:
 
 ## Smart Shop Bereich
 ### Einleitung
