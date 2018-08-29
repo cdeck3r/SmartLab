@@ -52,7 +52,6 @@ Student project researching the intersection between Smart Shop and Smart Home; 
       - [Protokolle](#protokolle-5)
       - [Sicherheit](#sicherheit-2)
       - [Kompatibilitaet](#kompatibilitaet-5)
-    - [Geschäftsmodell](#geschäftsmodell)
   * [Smart Shop Bereich](#smart-shop-bereich)
     + [Einleitung](#einleitung)
     + [Technologien](#technologien)
@@ -62,6 +61,7 @@ Student project researching the intersection between Smart Shop and Smart Home; 
       - [Amazon Go / Sensor Fusion](#amazon-go---sensor-fusion)
     + [Ausblick (?)](#ausblick----)
   * [Trends](#trends)
+- [Geschäftsmodell](#geschäftsmodell)
 
 # Allgemein
 ## Einordnung
