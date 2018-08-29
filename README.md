@@ -313,103 +313,7 @@ Das System verzichtet komplett auf eine Cloud-Lösung. Somit kann es auch ohne I
 
 #### Kompatibilitaet
 Das AFRISOhome Gateway bildet die Basisstation für den zuverlässigen Betrieb von kleinen Smart Home Lösungen oder auch sehr komplexen Gebäudemanagementsystemen. Produkten anderer Hersteller, wie z. B. den Inspektionssystemen von Netatmo, den Lichtsteuerungen von Philips Hue und IKEA Tradfri oder der Sprachsteuerung Alexa von Amazon auf Basis von EnOcean, Z-Wave, Zigbee, M-Bus oder W-LAN können mit diesem Gateway auch zusammenarbeiten.
-## Geschäftsmodell:
-Einer der Hauptnutzen des Internets der Dinge ist zudem die Möglichkeit, mit digital vernetzten
-Produkten, Services und Lösungen als Hersteller tiefer in die Wertschöpfungsstrukturen seiner
-Kunden einzudringen, um diesen ihre Arbeit und die Arbeit untereinander zu erleichtern. Viele
-Kunden agieren jedoch noch sehr traditionell in ihren jeweiligen Branchen. Sie vergessen dabei oft,
-dass im Zuge der digitalen Transformation immer mehr neue Spieler das Feld betreten, welche
-etablierte Anbieter durch ihre Innovationskraft und Agilität unter Druck setzen.
-Kaum jemand kann sich alle Artikel für den Wocheneinkauf merken – daher gibt es Einkaufszettel.
-Die papierne Variante hat allerdings entscheidende Nachteile: Ständig muss man neue Zettel
-schreiben, obwohl im Kern dieselben Produkte gekauft werden.
 
-#### Idee: Erstellung einer intelligenten digitalen Einkaufsliste mit folgenden Funktionen:
-* automatisches Befüllen der Einkaufsliste
-* dynamische Anpassung der Liste
-* Kategorisierung der Produkte nach Dringlichkeit
-
-Smart Home und Smart Shop ist eine super Sache zur Erhöhung des Komforts, der Einbruchsicherheit und der Energieeinsparung. Die technische Revolution im Supermarkt sowie Zuhause ist eher unauffällig. Sie wird deutlich dadurch, dass viele Informationen digital zu mir kommen.
-
-#### Diese Funktionen werden anhand folgender Informationen realisiert:
-* verfügbare Angebote
-* Kaufverhalten des Users
-* Haltbarkeitsdaten gekaufter Produkte
-* Verbrauchsdaten gekaufter Produkte
-
-### Architektur: Stufe 1
-
-![Stufe1.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe1.PNG) 
-
-#### Kunde:
-User definiert Standardwarenkorb.
-#### DB: (MHD Statistiken):
-Datenbank enthält die Mindesthaltbarkeitsdatum-Statistiken.
-#### Einkaufsliste Generator:
-Einkaufsliste wird automatisch nach Kunden und Datenbanken Statistiken generiert.
-#### Einkaufliste:
-Einkaufsliste Generator stellt die fertige Einkaufsliste vor.
-
-### Architektur: Stufe 2
-
-![Stufe2.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe2.PNG) 
-
-#### Kunde:
-Der Kunde definiert die Anforderungen an den Input (KundenID, Produktdaten, Datum)
-Supermarkt Kassensystem:
-Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
-#### DB:
-Kaufland Datenbank leitet alle benötigte Inputs an Einkauf Analyzer und Warenkorb Generator
-weiter.
-#### Einkauf Analyzer:
-Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID, KaufDatum)
-Als Outputs: Kundenspezifisches Kaufverhalten.
-#### Warenkorb Generator:
-Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID)
-Als Outputs: Kundenspezifischer Standardwarenkorb.
-#### Einkaufsliste Generator:
-Generierung Anhand vom Standardwarenkorb, Mindesthaltbarkeitsdatum und das Kaufverhalten
-von dem Kunden.
-#### Einkaufliste:
-Fertige spezialisierte Einkaufsliste nach Kaufverhalten der Kunden.
-
-### Architektur: Stufe 3
-
-![Stufe3.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe3.PNG) 
-
-#### Kunde:
-Der Kunde definiert die Anforderungen an den Input(KundenID, Produktdaten, Datum)
-Supermarkt Kassensystem:
-Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
-#### DB:
-Kaufland Datenbank leitet alle benötigte Inputs an Einkauf Analyzer und Warenkorb Generator
-weiter.
-#### Einkauf Analyzer:
-Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID, KaufDatum)
-Als Outputs: Kundenspezifisches Kaufverhalten.
-#### Warenkorb Generator:
-Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID)
-Als Outputs: Kundenspezifischer Standardwarenkorb.
-#### Smart-Home:
-Smarte Geräte bzw. Systeme oder Produkte liefern den Inputs (ProduktID, Produkt-verbrauch) an
-Einkaufsliste Generator.
-#### Einkaufsliste Generator:
-Generierung Anhand vom Standardwarenkorb, Mindesthaltbarkeitsdatum, Smart-Home Geräte und
-das Kaufverhalten von dem Kunden.
-#### Einkaufliste:
-Fertige spezialisierte Einkaufsliste nach Kaufverhalten der Kunden.
-
-### Fazit:
-Die digitale Transformation ist wesentlicher Treiber disruptiver Veränderungen in der
-Unternehmenswelt und unserer Gesellschaft. Diese Transformation basiert auf darunterliegenden
-Enabler-Technologien wie dem Internet der Dinge, der Vernetzung oder Big Data. Hochrechnungen in
-Bezug auf das Potenzial dieser Technologien versprechen enorme Chancen, deren Nutzen gehoben
-und deren Hürden abgebaut werden müssen. Ansätze dafür, bspw. in Form von Förderprogrammen
-oder Best Practices von sogenannten Pionier-Unternehmen (die in Sachen Digitalisierung schon sehr
-weit sind), sind vorhanden. Durch das Internet der Dinge entstehen Daten, die gesammelt, analysiert
-und kombiniert die Grundlage neuer, datenbasierter Services, der Smart Services, bilden. Wie diese
-Smart Services konzipiert, entwickelt und wertschöpfend etabliert werden können, darum geht es in
-diesem Buch.
 
 ## Smart Shop Bereich
 ### Einleitung
@@ -527,3 +431,101 @@ Damit man bei Amazon Go einkaufen kann, benötigt man :
 (vllt auf RFID oder andere mögliche Zukunftstechnologien eingehen)
 
 ## Trends
+
+## Geschäftsmodell:
+Einer der Hauptnutzen des Internets der Dinge ist zudem die Möglichkeit, mit digital vernetzten
+Produkten, Services und Lösungen als Hersteller tiefer in die Wertschöpfungsstrukturen seiner
+Kunden einzudringen, um diesen ihre Arbeit und die Arbeit untereinander zu erleichtern. Viele
+Kunden agieren jedoch noch sehr traditionell in ihren jeweiligen Branchen. Sie vergessen dabei oft,
+dass im Zuge der digitalen Transformation immer mehr neue Spieler das Feld betreten, welche
+etablierte Anbieter durch ihre Innovationskraft und Agilität unter Druck setzen.
+Kaum jemand kann sich alle Artikel für den Wocheneinkauf merken – daher gibt es Einkaufszettel.
+Die papierne Variante hat allerdings entscheidende Nachteile: Ständig muss man neue Zettel
+schreiben, obwohl im Kern dieselben Produkte gekauft werden.
+
+#### Idee: Erstellung einer intelligenten digitalen Einkaufsliste mit folgenden Funktionen:
+* automatisches Befüllen der Einkaufsliste
+* dynamische Anpassung der Liste
+* Kategorisierung der Produkte nach Dringlichkeit
+
+Smart Home und Smart Shop ist eine super Sache zur Erhöhung des Komforts, der Einbruchsicherheit und der Energieeinsparung. Die technische Revolution im Supermarkt sowie Zuhause ist eher unauffällig. Sie wird deutlich dadurch, dass viele Informationen digital zu mir kommen.
+
+#### Diese Funktionen werden anhand folgender Informationen realisiert:
+* verfügbare Angebote
+* Kaufverhalten des Users
+* Haltbarkeitsdaten gekaufter Produkte
+* Verbrauchsdaten gekaufter Produkte
+
+### Architektur: Stufe 1
+
+![Stufe1.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe1.PNG) 
+
+#### Kunde:
+User definiert Standardwarenkorb.
+#### DB: (MHD Statistiken):
+Datenbank enthält die Mindesthaltbarkeitsdatum-Statistiken.
+#### Einkaufsliste Generator:
+Einkaufsliste wird automatisch nach Kunden und Datenbanken Statistiken generiert.
+#### Einkaufliste:
+Einkaufsliste Generator stellt die fertige Einkaufsliste vor.
+
+### Architektur: Stufe 2
+
+![Stufe2.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe2.PNG) 
+
+#### Kunde:
+Der Kunde definiert die Anforderungen an den Input (KundenID, Produktdaten, Datum)
+Supermarkt Kassensystem:
+Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
+#### DB:
+Kaufland Datenbank leitet alle benötigte Inputs an Einkauf Analyzer und Warenkorb Generator
+weiter.
+#### Einkauf Analyzer:
+Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID, KaufDatum)
+Als Outputs: Kundenspezifisches Kaufverhalten.
+#### Warenkorb Generator:
+Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID)
+Als Outputs: Kundenspezifischer Standardwarenkorb.
+#### Einkaufsliste Generator:
+Generierung Anhand vom Standardwarenkorb, Mindesthaltbarkeitsdatum und das Kaufverhalten
+von dem Kunden.
+#### Einkaufliste:
+Fertige spezialisierte Einkaufsliste nach Kaufverhalten der Kunden.
+
+### Architektur: Stufe 3
+
+![Stufe3.PNG](https://github.com/cdeck3r/SmartLab/blob/master/Stufe3.PNG) 
+
+#### Kunde:
+Der Kunde definiert die Anforderungen an den Input(KundenID, Produktdaten, Datum)
+Supermarkt Kassensystem:
+Die angegebenen Inputs von dem Kunden, werden im Supermarkt-System gespeichert.
+#### DB:
+Kaufland Datenbank leitet alle benötigte Inputs an Einkauf Analyzer und Warenkorb Generator
+weiter.
+#### Einkauf Analyzer:
+Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID, KaufDatum)
+Als Outputs: Kundenspezifisches Kaufverhalten.
+#### Warenkorb Generator:
+Als Inputs von Kauflaund-Datenbank (ProduktID, KundenID)
+Als Outputs: Kundenspezifischer Standardwarenkorb.
+#### Smart-Home:
+Smarte Geräte bzw. Systeme oder Produkte liefern den Inputs (ProduktID, Produkt-verbrauch) an
+Einkaufsliste Generator.
+#### Einkaufsliste Generator:
+Generierung Anhand vom Standardwarenkorb, Mindesthaltbarkeitsdatum, Smart-Home Geräte und
+das Kaufverhalten von dem Kunden.
+#### Einkaufliste:
+Fertige spezialisierte Einkaufsliste nach Kaufverhalten der Kunden.
+
+### Fazit:
+Die digitale Transformation ist wesentlicher Treiber disruptiver Veränderungen in der
+Unternehmenswelt und unserer Gesellschaft. Diese Transformation basiert auf darunterliegenden
+Enabler-Technologien wie dem Internet der Dinge, der Vernetzung oder Big Data. Hochrechnungen in
+Bezug auf das Potenzial dieser Technologien versprechen enorme Chancen, deren Nutzen gehoben
+und deren Hürden abgebaut werden müssen. Ansätze dafür, bspw. in Form von Förderprogrammen
+oder Best Practices von sogenannten Pionier-Unternehmen (die in Sachen Digitalisierung schon sehr
+weit sind), sind vorhanden. Durch das Internet der Dinge entstehen Daten, die gesammelt, analysiert
+und kombiniert die Grundlage neuer, datenbasierter Services, der Smart Services, bilden. Wie diese
+Smart Services konzipiert, entwickelt und wertschöpfend etabliert werden können, darum geht es in
+diesem Buch.
