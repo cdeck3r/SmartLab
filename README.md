@@ -539,10 +539,132 @@ Neben der Erweiterung von SQL um prozedurale Konzepte kann SQL auch umgekehrt in
 
 Unseres Projekt basiert sich auf konkreten Produkten, die wir jeden Tag in den Supermärkten sehen und kaufen könnten. 
 Die Produkten sind wie folgendes gelistet:
-•	Butter
-•	Milch
-•	Salami
-•	Käsescheiben
-•	Joghurt.
+* Butter
+* Milch
+* Salami
+* Käsescheiben
+* Joghurt.
 
+Damit wir realistischen Test Ergebnisse liefern könnten, haben wir die Datenbank in der Testphase mit Dummy Daten eingefüllt.
+Wir notieren das Mindesthaltbarkeitsdatum jedes Produktes in verschiedenen Supermärkten und haben sie dann in einer Datenbank gespeichert. Jedes Produkt ist wie folgt definiert: 
 
+*	ID
+*	ProduktID
+*	MHD (in Tagen)
+
+Das Einfügen von Daten erfolgt mittels der INSERT-Klausel. Von dieser Klausel gibt es im Wesentlichen zwei Ausprägungen: Daten können von Hand einzeln eingefügt werden, oder das Ergebnis einer Anfrage kann in eine Tabelle übernommen werden:
+
+```
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (0, 5, 55)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (1, 5, 33)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (2, 5, 21)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (3, 5, 33)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (4, 5, 27)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (5, 5, 34)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (6, 5, 51)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (7, 5, 31)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (8, 5, 19)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (9, 5, 23)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (10, 5, 22)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (11, 5, 25)
+INSERT INTO einkaufslistengenerator.produkt_mhd_statistik (id, produkt_id, ablauf_in_tagen) VALUES (12, 5, 20)
+```
+Vor unserem INSERT-Befehl muss natürlich eine Verbindung zur Datenbank hergestellt und die gewünschte Datenbank ausgewählt werden. Unsere erste Datenbank mit Tabelle und Inhalt ist erzeugt, mit der wir nun testen können.
+
+2. Funktionberechnug:
+
+Das Programmiersprache Java hat eine Vielzahl von Methoden zum Speichern und organisieren von Daten. Eine solche Methode ist das Array. Ein Array ist eine Sammlung von Daten, die in sequenzieller Reihenfolge im Arbeitsspeicher des Computers gespeichert. Die Daten können beliebige Daten wie Zahlen, Buchstaben und Objekte sein. Ein interessantes Feature über ein Array ist, dass es verwendet werden kann, um zusätzliche Daten über die Daten ableiten, die sie enthält. Arrays können Sie beispielsweise um den Mittelwert der Zahlen in einem Array zu finden.
+
+* import java.util.ArrayList;
+
+Die Klasse ArrayList erweitert AbstractList und implementiert das Interface List. ArrayList unterstützt dynamische Arrays, die bei Bedarf wachsen können. Standard Java-Arrays haben eine feste Länge. Nachdem Arrays erstellt wurden, können sie nicht mehr wachsen oder schrumpfen, was bedeutet, dass Sie im Voraus wissen müssen, wie viele Elemente ein Array enthalten wird.
+
+* import java.util.List;
+
+Repräsentiert eine Liste von Elementen beliebigen Types in festgelegter Reihenfolge, auf die sowohl wahlfrei als auch sequentiell zugegriffen werden kann.
+
+* Berechnung der Standardabweichung:
+
+o	Die Standardabweichung ist ein Begriff aus der Statistik bzw. Wahrscheinlichkeitsrechnung oder Stochastik. Mit ihr kann man ermitteln, wie stark die Streuung der Werte um einen Mittelwert ist. Zunächst sollte man jedoch noch folgendes Wissen. Um die Standardabweichung zu berechnen, müssen wir vorher erst den Durchschnitt berechnen (arithmetisches Mittel sagen Mathematiker dazu) und im Anschluss noch die Varianz.
+
+Um dies festzustellen, reicht die Berechnung des Mittelwerts alleine nicht aus. Wir benötigen noch Informationen zur Streuung der Daten. Erst diese sagt uns, ob wir den Mittelwert als zuverlässigen Erwartungswert betrachten dürfen. Unser Ziel ist daher also, die Standardabweichung zu berechnen. Anmerkung: Bei der Berechnung sind die Kommazahlen auf die zweite Nachkommastelle gerundet.
+
+Die Berechnung des Mittelwerts (= Erwartungswert der Verteilung) erfolgt über die Summierung der einzelnen Schlafdauern und die anschließende Teilung durch die Anzahl der Tage.
+
+Die Berechnung der Varianz erfolgt über die Mittelung der summierten Abweichungsquadrate der einzelnen Schlafdauern vom Mittelwert.
+	
+Die Standardabweichung ergibt sich aus der Quadratwurzel der Varianz.
+
+Wir haben gerade gesehen, wie man die Standardabweichung für einen gegebenen Datensatz berechnet. Interessant wird es, wenn der Vergleich zweier Datensätze anhand des Kriteriums der Standardabweichung erfolgen soll. Hierbei zeigt sich die Bedeutung der Standardabweichung als Maß für die Repräsentativität eines Mittelwerts. Die Methode durchschnitt addiert alle Werte die ihr übergeben werden und gibt den Durchschnitt zurück.
+
+```
+/Berechnet die StandardAbweichung
+	public double computeStandardAbw(ArrayList<Integer> produktDaten){
+		double mittelWert = 0;
+		double varianz = 0;
+		double standardAbw = 0;
+		int tageSumme = 0;
+		double zwischenBerechnung = 0;
+		
+		//Mittelwert
+		for(int i=0; i<produktDaten.size(); i++) {
+			tageSumme += produktDaten.get(i);
+		}
+		mittelWert = tageSumme/produktDaten.size();
+		
+		//Varianz
+		for(int i=0; i<produktDaten.size(); i++) {
+			zwischenBerechnung += Math.pow((produktDaten.get(i)-mittelWert), 2);
+		}
+		varianz = zwischenBerechnung/produktDaten.size();
+		
+		//Standardabweichung
+		standardAbw = Math.sqrt(varianz);
+		
+		return standardAbw;
+	}
+ ```
+ 
+* Berechnung der Erwartungswert:
+
+Deklarieren Sie zwei Integer-Zahl-Typen:
+einer, der die Summe aller Elemente in das Array und die andere für die Speicherung des durchschnittlichen Wert der Elemente halten wird.
+Sie können dieser Ganzzahlen deklarieren, indem Sie schreiben diese Linien zwischen den geschweiften Klammern der Hauptfunktion
+
+```
+//Berechnet den Erwartungswert P.S. unser Erwartungswert ist hier den Durchschnitt
+	
+	public double computeErwartungswert(ArrayList<Integer> produktDaten) {
+		double erwartungsWert = 0;
+		int tageSumme = 0;
+		for(int i=0; i<produktDaten.size(); i++) {
+			tageSumme += produktDaten.get(i);
+		}
+		erwartungsWert = tageSumme/produktDaten.size();
+		
+		return erwartungsWert;
+	}
+```
+
+* Berechnung Verteilungsfunktion und der Verbrauchtswahrscheinlichkeit:
+
+  - Verteilungsfunktion:
+  Die Verteilungsfunktion F einer Zufallsgröße X gibt die Wahrscheinlichkeit dafür an, dass nur Werte bis zu einer bestimmten Größe       angenommen werden. Die Verteilungsfunktion F(k) summiert (kumuliert) dazu die Wahrscheinlichkeiten der Werte von X, die kleiner oder   gleich k sind.
+  
+  - Verbrauchtswahrscheinlichkeit:
+  Bei der Wahrscheinlichkeitsrechnung (mit dem Teilgebiet Stochastik) geht es darum anzugeben, ob etwas eher zutritt oder eher nicht     zutrifft. Die Wahrscheinlichkeit ist eine Angabe zwischen 0 und 1 (oder auch zwischen 0 % und 100 %). Bei 0 ist es unmöglich, dass     etwas passiert. Bei 1 ist es ganz sicher, dass etwas passiert. Je näher die Zahl bei der 1 ist, desto eher passiert etwas. Oder         umgekehrt: Je näher an der 0, desto unwahrscheinlicher.
+  
+  
+  ```
+  //Bau die Verteilungsfunktion und berechnet die Verbrauchtswahrscheinlichkeit.
+	public double computeKumulativeWahrscheinlichkeit(ArrayList<Integer> produktDaten,  double abgelaufeneTage) {
+		double erwartungsWert = this.computeErwartungswert(produktDaten);
+		double standardAbweichung = this.computeStandardAbw(produktDaten);
+		//Verteiluntsfunktion wird gebaut
+		NormalDistribution normDist = new NormalDistribution(erwartungsWert, standardAbweichung);
+		//Wahrscheinlichkeit, dass ein Produkt nach höchstens n-1 Tagen verbraucht wird: P(x<n)
+		double cumulWahrscheinlichkeit = normDist.cumulativeProbability(abgelaufeneTage);
+		
+		return cumulWahrscheinlichkeit;
+	}
+ ```
