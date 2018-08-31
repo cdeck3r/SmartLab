@@ -62,6 +62,7 @@ Student project researching the intersection between Smart Shop and Smart Home; 
     + [Ausblick (?)](#ausblick----)
   * [Trends](#trends)
 - [Geschäftsmodell](#geschäftsmodell)
+- [Implementierung](#implementierung)
 
 # Allgemein
 ## Einordnung
@@ -529,3 +530,19 @@ weit sind), sind vorhanden. Durch das Internet der Dinge entstehen Daten, die ge
 und kombiniert die Grundlage neuer, datenbasierter Services, der Smart Services, bilden. Wie diese
 Smart Services konzipiert, entwickelt und wertschöpfend etabliert werden können, darum geht es in
 diesem Buch.
+
+## Implementierung:
+
+1.	Dummyfüllen der MHD Datenbank:
+
+Neben der Erweiterung von SQL um prozedurale Konzepte kann SQL auch umgekehrt in eine bestehende prozedurale höhere Programmiersprache wie C, C++, Ada, JAVA, COBOL, etc. eingebunden werden. Diese Kopplungsart von Programmier- und Datenbanksprache bezeichnet man als Embedded SQL. Die (höhere) Programmiersprache wird dabei als Hostsprache bezeichnet. Eine weitere Kopplungsart stellt die Erweiterung der Programmiersprache um Datenbank Konstrukte dar. Dieser Ansatz wird bei persistenten Programmiersprachen (z.B. JAVA, POET) und Datenbank-Programmiersprachen (z.B. Pascal/R) verfolgt.
+
+Unseres Projekt basiert sich auf konkreten Produkten, die wir jeden Tag in den Supermärkten sehen und kaufen könnten. 
+Die Produkten sind wie folgendes gelistet:
+•	Butter
+•	Milch
+•	Salami
+•	Käsescheiben
+•	Joghurt.
+
+
