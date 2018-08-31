@@ -667,7 +667,10 @@ Sie können dieser Ganzzahlen deklarieren, indem Sie schreiben diese Linien zwis
 		
 		return cumulWahrscheinlichkeit;
 	}
- ```
+	
+	```
+	
+	
  3. Einkaufslisten Generator:
 
 * Ampelsystem
