@@ -668,3 +668,53 @@ Sie können dieser Ganzzahlen deklarieren, indem Sie schreiben diese Linien zwis
 		return cumulWahrscheinlichkeit;
 	}
  ```
+ 3. Einkaufslisten Generator:
+
+* Ampelsystem
+
+Mit dem Ampelsystem wollen wir dem User einen visuellen Hinweis darüber geben, wie dringend ein
+Produkt zu kaufen ist. Ist ein Produkt rot kenngezeichnet soll das Produkt dringend gekauft werden
+und wird ab da gleich auf die Einkaufsliste gesetzt. Ist ein Produkt eher orange kenngezeichnet ist die
+Dringlichkeit geringer als bei rot. Ist ein Produkt aber Grün markiert heißt es, dass das Produkt noch
+in genügenden Menge vorhanden ist.
+Unserer Einkaufsgenerator berechnet zu welchen bestimmten Stichtag ein Produkt mit welchem
+Wahrscheinlichkeit ablaufen bzw. verbraucht wird. Auf Basis dieser Wahrscheinlichkeit wurde das
+Ampelsystem definiert.
+
+P &lt; 0,25  -> Grün
+0,25 &lt; P &lt; 0,8 ->  Orange
+0,8 &lt; P &lt; 1 -> Rot
+
+* Datenbank
+  - Tabellen
+  
+  ![Datenbank Tabelle](https://github.com/cdeck3r/SmartLab/blob/master/Tabelle_ampelsystem.PNG)
+  
+4. Simulation:
+* Definitionen
+  - Persona
+	Entspricht in diesem Zusammenhang Konsum/Verbrauchsdaten über einen bestimmten
+	Personenkreis, wobei der Verbrauch in Ranges angegeben ist. D.h. für bestimmte Produkte ist deren
+	Bedarfshäufigkeit in einer Persona definiert, sowie auch die Einkaufshäufigkeit (in der gleichen
+	Form).
+	
+	  ![Persona 1](https://github.com/cdeck3r/SmartLab/blob/master/persona1.PNG)
+
+* Smart Integration Matrix
+Die Smart Integration Matrix zeigt die in unserem Szenario möglichen Varianten wie eine Einkaufsliste befüllt werden kann. Dabei sind für die drei definierten Möglichkeiten (manuell, SmartHome, Smart Shop) jeweils Qualitätsstufen angegeben, welche das Maß der Qualität der Nutzung der drei Verwaltungsmöglichkeiten darstellt. Diese Qualitätsstufen können Werte zwischen 0 und 3 annehmen, wobei 0 := keine Verwendung und 3 := sehr sorgfältige Verwendung.
+Die Tabelle ist im Folgenden dargestellt. In unserer Simulation wird diese Matrix verwendet, um bestimmte Verhaltensweisen von Nutzern nachstellen zu können um daraufhin durch die Simulation den Nutzen an unseren Anwendungen für die bestimmten Verhaltensweisen erkennen zu können.
+
+![Smart Matrix](https://github.com/cdeck3r/SmartLab/blob/master/samrtintergmatrix.PNG)
+
+* Erstellung eines Verbrauchsablaufs auf Basis vordefinierter Personas
+* Input:
+ Persona (siehe Beispielabbildung)
+Produktliste und Verbrauchsrange 
+(Zeitspanne für jedes Produkt, 
+wann es wieder gebraucht wird)
+Einkaufshäufigkeit (in Tagen)
+Anzahl von zu simulierenden Einkäufen
+* Output: 
+Zufälliger Verbrauchsablauf der angegebenen Persona
+
+Beispiel:
