@@ -721,3 +721,49 @@ Anzahl von zu simulierenden Einkäufen
 Zufälliger Verbrauchsablauf der angegebenen Persona
 
 Beispiel:
+
+![Tabelle Persona](https://github.com/cdeck3r/SmartLab/blob/master/tabelle2persona.PNG)
+
+* Erstellung der Soll-Einkaufsliste
+Input: 
+Persona
+Verbrauchsablauf
+Zeitpunkt X
+Output:
+Soll-Einkaufsliste 
+
+Ablauf:
+Der vorliegende Verbrauchsablauf wird durchlaufen und dabei an jedem Zeitpunkt eines Einkaufs die Soll-Liste berechnet. Dies geschieht, indem die Verbrauchsabläufe mit den Kaufzeitpunkten kombiniert werden und mit dem aktuellen Kaufdatum abgeglichen werden.
+Beispiel:
+
+![Gegeben folgender Verbrauchsablauf](https://github.com/cdeck3r/SmartLab/blob/master/beispersona.PNG)
+
+* Erstellung der „Vorhersage-Einkaufsliste“
+Input: 
+Persona
+Verbrauchsablauf
+Zeitpunkt X
+Smart-Integration-Matrix für Persona
+Output: „Vorhersage-Einkaufsliste“
+
+
+Ablauf
+
+
+Zur Bestimmung der Einkaufliste verwenden wir unsere App, welche auf Basis festgehaltener MHD- und Verbrauchsdaten eine Einkaufsliste bestimmt. Da das Verhalten eines Nutzers bzw. dessen Sorgfalt/Präzision bei der Dokumentation verbrauchter Produkte stark differieren kann, verwenden wir die sogenannte Smart Integration Matrix. Diese Matrix, bzw. dessen 6 Attribute bestimmen, welche Technologien/Applikationen er zur Erfassung verwendet (App, SmartHome, SmartShop), und zudem mit welcher Sorgfalt/Genauigkeit er diese dafür verwendet (Q).
+Beispiel: 
+
+
+![Gegeben folgender Verbrauchsablauf](https://github.com/cdeck3r/SmartLab/blob/master/gegenfolgverbrauch.PNG)
+
+Daraus ergibt sich eine Einkaufsliste. Je nachdem, wie die Qualität der verwendeten Methoden zur Bestückung der Liste ist, wird bei entstehendem Bedarf das Produkt mit einer bestimmten Wahrscheinlichkeit auf die Liste gesetzt. Diese Wahrscheinlichkeiten sind im Kapitel Definitionen einsehbar.
+D.h. für das hier beschriebene Szenario gibt es keine eindeutige Belegung der Einkaufsliste, da die ‚Setze auf Liste‘-Aktionen abhängig von der Qualitätsstufe und somit abhängig von einem gewissen Zufallsfaktor sind. Durch diesen Mechanismus wird der menschliche Faktor, also die menschlichen Unterschiede bei der Pflege der Einkaufliste, simuliert.
+
+Am obigen Verbrauchsablauf ist zu sehen, dass der erste Einkauf am Tag 5 erfolgt. Ebenso ist erkennbar, dass der erste Verbrauch von Milch am Tag 4 stattfindet. In der Simulation würde somit an Tag 4 anhand der vorliegenden Smart Integration Attribute entschieden werden, ob Milch zu diesem Zeitpunkt auf der Einkaufsliste landet oder nicht.
+
+* Simulation
+Die eigentliche Simulation bedient sich an den zuvor vorgestellten Methoden zur Bestimmung der Soll- und Ist-Einkaufsliste für vordefinierte Personas, um die Qualität der erzeugten Einkaufsliste darstellen zu können. Hierfür wird einfach die Soll-Liste mit der generierten Einkaufsliste verglichen und die Übereinstimmung der Listen betrachtet.
+Um die Qualität der Liste und die Entwicklung dieser Qualität erkennen zu können, wird die Differenz der Soll- und Ist-Liste immer zum Zeitpunkt eines Einkaufs durchgeführt und festgehalten.
+Durch die Kombination von Persona und Smart Integration Matrix können somit zahlreiche Personengruppen abgedeckt werden und dessen Nutzen dabei leicht erkannt werden. Somit können Zielgruppen besser eingegrenzt werden und zudem geeignete Nutzungsempfehlungen ausgesprochen werden.
+Erkenntnisse
+Bei jeder Iteration werden Soll- und Ist-Einkaufsliste miteinander verglichen, um die Diskrepanz zu ermitteln.
