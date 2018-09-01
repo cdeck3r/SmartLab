@@ -684,9 +684,9 @@ Unserer Einkaufsgenerator berechnet zu welchen bestimmten Stichtag ein Produkt m
 Wahrscheinlichkeit ablaufen bzw. verbraucht wird. Auf Basis dieser Wahrscheinlichkeit wurde das
 Ampelsystem definiert.
 
-P &lt; 0,25  -> Grün
-0,25 &lt; P &lt; 0,8 ->  Orange
-0,8 &lt; P &lt; 1 -> Rot
+* P &lt; 0,25  -> Grün
+* 0,25 &lt; P &lt; 0,8 ->  Orange
+* 0,8 &lt; P &lt; 1 -> Rot
 
 * Datenbank
   - Tabellen
