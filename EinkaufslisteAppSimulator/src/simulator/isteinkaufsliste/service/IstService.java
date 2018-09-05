@@ -1,5 +1,9 @@
 package simulator.isteinkaufsliste.service;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -196,7 +200,7 @@ public class IstService {
 			result.first();
 			int product_id = result.getInt("produkt_id");
 
-			// Einfügen in EInkaufshistorie
+			// Einfï¿½gen in EInkaufshistorie
 			result = statement.executeQuery("SELECT * FROM einkaufs_historie WHERE produkt_id = " + product_id
 					+ " AND kunden_id = " + kunden_id);
 			result.last();
@@ -225,7 +229,7 @@ public class IstService {
 						+ "WHERE produkt_id = " + product_id + " AND kunden_id = " + kunden_id);
 			}
 
-			// EInfügen in EInkaufsliste
+			// EInfï¿½gen in EInkaufsliste
 			result = statement.executeQuery("SELECT * FROM temp_einkaufsliste WHERE kunden_id = " + kunden_id
 					+ " AND produkt_id = " + product_id);
 			result.first();
@@ -301,7 +305,7 @@ public class IstService {
 	/**
 	 * ermittle das Einkaufsdatum aus dem Parameter einkaufsTag.
 	 * 
-	 * ist auch gültig beim Einfügen eines Produkt auf der einkaufsliste -- einkaufsTag wäre dabei putTag
+	 * ist auch gï¿½ltig beim Einfï¿½gen eines Produkt auf der einkaufsliste -- einkaufsTag wï¿½re dabei putTag
 	 * 
 	 * @param einkaufsTag : Anzahl der Tage seit heute
 	 * @return
@@ -324,5 +328,23 @@ public class IstService {
 		
 		return einkaufsDatum;
 	}	
+	
+	
+	
+	/**
+	 * sortiere eine Liste, die keyListe von der istEinkaufslisteMap, so dass die Map-Werte ï¿½ber den Key sortiert 
+	 * abgerufen werden kï¿½nnen.
+	 * @param istEinkaufsListenMap
+	 * @return
+	 */
+	public List<Integer> sortiereIstMapKey(Map<Integer, List<String>> istEinkaufsListenMap){
+		List<Integer> istListeMapKey = new ArrayList<>();
+		for(int key : istEinkaufsListenMap.keySet()) {
+			istListeMapKey.add(key);
+		}
+		Collections.sort(istListeMapKey);
+		
+		return istListeMapKey;
+	}
 
 }

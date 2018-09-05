@@ -21,14 +21,17 @@ public class Main {
 		Persona sportler;
 		
 		sportler = sollService.erstellePersonaMitVerbrauchsdaten("Sportler", 3, 6, 1000);
-		Map<Integer, List<Produkt>> sollEinkaufsListenMap = sollService.erstelleSollEinkaufslistenBeimEinkauf(sportler, 150);
 		printPersonaData(sportler);
 		
+		Map<Integer, List<Produkt>> sollEinkaufsListenMap = sollService.erstelleSollEinkaufslistenBeimEinkauf(sportler, 150);
+		sollService.schreibeSollEinkaufslistenInEinerDatei(sollEinkaufsListenMap, "sollEinkaufsListe.txt");
 		
 		einkaufslistenGenerator.reset();
 		
 		Map<Integer, List<String>> istEinkaufsListenMap = einkaufslistenGenerator.erstelleIstEinkaufslisteMapBeimKaufV1(sportler, sollEinkaufsListenMap, 150);
 		einkaufslistenGenerator.printIstEinkaufsListen(istEinkaufsListenMap);
+		
+		//einkaufslistenGenerator.schreibeEinkaufslistenInEinerDatei(null, "sollEinkaufsLite.txt");
 		
 		
 

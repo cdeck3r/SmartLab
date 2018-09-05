@@ -1,5 +1,9 @@
 package simulator.solleinkaufsliste.service;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -48,7 +52,7 @@ public class SollService {
 		return listeKumuliert;
 	}
 	
-	//kumuliere Verbrauchsablauf in Abhängigkeit zum einkaufsZeitpunkt
+	//kumuliere Verbrauchsablauf in Abhï¿½ngigkeit zum einkaufsZeitpunkt
 	public List<Integer> kumuliereVerbrauchsablauf(List<Integer> verbrauchsAblauf, List<Integer> einkaufsAblauf ){
 		List<Integer> kumulierterVerbrauchsablauf = new ArrayList<Integer>();
 		int lastBuy=0;
@@ -65,7 +69,7 @@ public class SollService {
 		return kumulierterVerbrauchsablauf;
 	}
 	
-	//finde den größten Zahleintrag einer Liste (Verbrauchsablauf), der <= einer angegebenen Zahl (Einkaufzeitpunkt).
+	//finde den grï¿½ï¿½ten Zahleintrag einer Liste (Verbrauchsablauf), der <= einer angegebenen Zahl (Einkaufzeitpunkt).
 	public int findeGroesteZahlKleinerGleichKaufzeitpunkt(List<Integer> liste, int einkaufZeitpunkt) {
 		int result = 0;
 		for(int i : liste) {
@@ -76,7 +80,7 @@ public class SollService {
 		return result;
 	}
 	
-	//kleinstes Element was größer oder gleich einen Wert ist
+	//kleinstes Element was grï¿½ï¿½er oder gleich einen Wert ist
 	public int findeKleinsteGroesserOderGleich(List<Integer> einkaufsablauf, int wert) {
 		int result = 0;
 		for(int i : einkaufsablauf) {
@@ -280,8 +284,8 @@ public class SollService {
 	}
 	
 	/**
-	 * erstelle SollEinkaufslisten vor jedem Einkauf über ein Zeitraum in Tagen.
-	 * Da es verkommen kann, das zum Zeitpunkt eines Einkaufs die Solleinkaufsliste leer ist, gibt diese Methode nur ausgefüllte sollEinkaufslisten
+	 * erstelle SollEinkaufslisten vor jedem Einkauf ï¿½ber ein Zeitraum in Tagen.
+	 * Da es verkommen kann, das zum Zeitpunkt eines Einkaufs die Solleinkaufsliste leer ist, gibt diese Methode nur ausgefï¿½llte sollEinkaufslisten
 	 * @param persona
 	 * @param zeitRaumInTagen
 	 * @return eine Map, key:value = Kauftag:SollEinkaufsliste
@@ -314,12 +318,12 @@ public class SollService {
 	/**
 	 * 
 	 * @param sollEinkaufsListenMap
-	 * @return gibt Kauftagen und deren entsprechende SollEinkaufsliste zurück, wenn die SollEinkaufsliste nicht leer ist.
+	 * @return gibt Kauftagen und deren entsprechende SollEinkaufsliste zurï¿½ck, wenn die SollEinkaufsliste nicht leer ist.
 	 */
 	public Map<Integer, List<Produkt>> findeNurAusgefuellteSollEinkaufslisten(Map<Integer, List<Produkt>> sollEinkaufsListenMap){
 		Map<Integer, List<Produkt>> ausgefuellteSollEinkaufslistenMap = new HashMap<>();
 		
-		List<Integer> sollListeMapKey = this.sortiereMapKey(sollEinkaufsListenMap);
+		List<Integer> sollListeMapKey = this.sortiereSollMapKey(sollEinkaufsListenMap);
 		List<Produkt> sollListeMapValue = new ArrayList<>();
 		
 		for(int i=0; i<sollListeMapKey.size(); i++) {
@@ -334,12 +338,12 @@ public class SollService {
 	
 	
 	/**
-	 * sortiere eine Liste, die keyListe von der solleinkaufslisteMap, so dass die Map-Werte über den Key sortiert 
-	 * abgerufen werden können.
+	 * sortiere eine Liste, die keyListe von der solleinkaufslisteMap, so dass die Map-Werte ï¿½ber den Key sortiert 
+	 * abgerufen werden kï¿½nnen.
 	 * @param sollEinkaufsListenMap
 	 * @return
 	 */
-	public List<Integer> sortiereMapKey(Map<Integer, List<Produkt>> sollEinkaufsListenMap){
+	public List<Integer> sortiereSollMapKey(Map<Integer, List<Produkt>> sollEinkaufsListenMap){
 		List<Integer> sollListeMapKey = new ArrayList<>();
 		for(int key : sollEinkaufsListenMap.keySet()) {
 			sollListeMapKey.add(key);
@@ -349,12 +353,13 @@ public class SollService {
 		return sollListeMapKey;
 	}
 	
+	
 	/**
 	 * zeit Solleinkaufslisten an
 	 * @param sollEinkaufsListenMap
 	 */
 	public void printSollEinkaufsListen(Map<Integer, List<Produkt>> sollEinkaufsListenMap) {
-		List<Integer> sollListeMapKey = this.sortiereMapKey(sollEinkaufsListenMap);
+		List<Integer> sollListeMapKey = this.sortiereSollMapKey(sollEinkaufsListenMap);
 
 		System.out.println("");
 		System.out.println("-------------------------------Solleinkaufslisten beim Einkauf---------------------------------");
@@ -368,6 +373,37 @@ public class SollService {
 		System.out.println("");
 		System.out.println("-----------------------------------------------------------------------------------------------");
 		System.out.println("");
+	}
+	
+	/**
+	 * schreibe eine SollEinkaufsliste in einer Datei
+	 * @param einkaufslisteMap
+	 * @param dateiName
+	 */
+	public void schreibeSollEinkaufslistenInEinerDatei(Map<Integer, List<Produkt>> einkaufslisteMap, String dateiName) {
+		List<Integer> ListeMapKey = this.sortiereSollMapKey(einkaufslisteMap);
+		String path = "C:\\Users\\tchwangnwou\\Desktop\\HS REUTLINGEN\\Simulation_Dateien\\";
+		File datei = new File(path + dateiName);
+		try {
+			datei.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		try(BufferedWriter bw = new BufferedWriter(new FileWriter(datei))) {
+			bw.write("---------------------------" + "\n");
+			bw.write("-----Soll-Einkaufsliste-----" + "\n");
+			bw.write("---------------------------" + "\n");
+			for(int i=0; i<ListeMapKey.size(); i++) {
+				bw.write("Einkaufstag: " + ListeMapKey.get(i) + "\n");
+				for (Produkt produktListe : einkaufslisteMap.get(ListeMapKey.get(i))) {
+					bw.write(produktListe.getName() + "\n");
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

@@ -1,5 +1,9 @@
 package simulator.isteinkaufsliste.service;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -50,7 +54,7 @@ public class EinkaufslistenGenerator {
 	 * berechne die Liste durch die App und speichere Produkte mit wahrscheinlichkeht >= 90 in der temp_einkaufsliste
 	 * 
 	 * @param kunden_id
-	 * @param putDatum : in Tage, Es is der Zeitpunt, wo ein Produkt auf die IstEinkaufsliste eingefügt wird
+	 * @param putDatum : in Tage, Es is der Zeitpunt, wo ein Produkt auf die IstEinkaufsliste eingefï¿½gt wird
 	 * @return
 	 * @throws ParseException 
 	 */
@@ -305,7 +309,7 @@ public class EinkaufslistenGenerator {
 		Map<Integer, List<String>> istEinkaufsListeMap = new HashMap<>();
 		List<String> istEinkaufsListe = new ArrayList<>();
 		List<String> tempIstEinkaufsListe = new ArrayList<>();
-		List<Integer> sollEinkaufsListenMapKeys = this.sortiereMapKey(sollEinkaufsListenMap);
+		List<Integer> sollEinkaufsListenMapKeys = sollService.sortiereSollMapKey(sollEinkaufsListenMap);
 		
 		int j=0;
 		
@@ -316,7 +320,7 @@ public class EinkaufslistenGenerator {
 				for(int l=0; l<tempIstEinkaufsListe.size(); l++) {
 					if(this.itemAlreadyExist(istEinkaufsListe, tempIstEinkaufsListe.get(l))==false) {
 						istEinkaufsListe.add(tempIstEinkaufsListe.get(l));
-						istService.put_Product_On_Einkaufsliste(1, tempIstEinkaufsListe.get(l), j); //befüllen der temp_einkaufsliste
+						istService.put_Product_On_Einkaufsliste(1, tempIstEinkaufsListe.get(l), j); //befï¿½llen der temp_einkaufsliste
 					}
 				}
 				
@@ -335,73 +339,20 @@ public class EinkaufslistenGenerator {
 			if(sollEinkaufsListenMapKeys.get(i)>zeitRaum) {
 				break;
 			}
-			
 		}
 		
-		System.out.println("############### j = " + j);
+		this.schreibeGenerierteEinkaufslistenInEinerDatei(istEinkaufsListeMap, "istEinkaufsListe.txt");
 		return istEinkaufsListeMap;
 	}
 	
-
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/**
-	 * sortiere eine Liste, die keyListe von der sollEinkaufslisteMap, so dass die Map-Werte über den Key sortiert 
-	 * abgerufen werden können.
-	 * @param sollEinkaufsListenMap
-	 * @return
-	 */
-	public List<Integer> sortiereMapKey(Map<Integer, List<Produkt>> sollEinkaufsListenMap){
-		List<Integer> istListeMapKey = new ArrayList<>();
-		for(int key : sollEinkaufsListenMap.keySet()) {
-			istListeMapKey.add(key);
-		}
-		Collections.sort(istListeMapKey);
-		
-		return istListeMapKey;
-	}
-	
-	/**
-	 * sortiere eine Liste, die keyListe von der istEinkaufslisteMap, so dass die Map-Werte über den Key sortiert 
-	 * abgerufen werden können.
-	 * @param istEinkaufsListenMap
-	 * @return
-	 */
-	public List<Integer> sortiereIstMapKey(Map<Integer, List<String>> istEinkaufsListenMap){
-		List<Integer> istListeMapKey = new ArrayList<>();
-		for(int key : istEinkaufsListenMap.keySet()) {
-			istListeMapKey.add(key);
-		}
-		Collections.sort(istListeMapKey);
-		
-		return istListeMapKey;
-	}
 	
 	/**
 	 * zeigt IstEinkaufslisten an. kaufdatum:istEinkaufsListe
 	 * @param istEinkaufsListenMap
 	 */
 	public void printIstEinkaufsListen(Map<Integer, List<String>> istEinkaufsListenMap) {
-		List<Integer> istListeMapKey = this.sortiereIstMapKey(istEinkaufsListenMap);
+		List<Integer> istListeMapKey = istService.sortiereIstMapKey(istEinkaufsListenMap);
 
 		System.out.println("");
 		System.out.println("-------------------------------Isteinkaufslisten beim Einkauf---------------------------------");
@@ -418,7 +369,7 @@ public class EinkaufslistenGenerator {
 	}
 	
 	/**
-	 * prüfe, ob ein item in einer Liste existiert
+	 * prï¿½fe, ob ein item in einer Liste existiert
 	 * @param list
 	 * @param item
 	 * @return
@@ -434,5 +385,36 @@ public class EinkaufslistenGenerator {
 				b=false;
 		}
 		return b;
+	}
+	
+	/**
+	 * schreibe generierte Einkaufslisten in einer Datei
+	 * @param einkaufslisteMap
+	 * @param dateiName
+	 */
+	public void schreibeGenerierteEinkaufslistenInEinerDatei(Map<Integer, List<String>> einkaufslisteMap, String dateiName) {
+		List<Integer> ListeMapKey = istService.sortiereIstMapKey(einkaufslisteMap);
+		String path = "C:\\Users\\tchwangnwou\\Desktop\\HS REUTLINGEN\\Simulation_Dateien\\";
+		File datei = new File(path + dateiName);
+		try {
+			datei.createNewFile();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		try(BufferedWriter bw = new BufferedWriter(new FileWriter(datei))) {
+			bw.write("---------------------------" + "\n");
+			bw.write("-----Ist-Einkaufsliste-----" + "\n");
+			bw.write("---------------------------" + "\n");
+			for(int i=0; i<ListeMapKey.size(); i++) {
+				bw.write("Einkaufstag: " + ListeMapKey.get(i) + "\n");
+				for (String produktListe : einkaufslisteMap.get(ListeMapKey.get(i))) {
+					bw.write(produktListe + "\n");
+				}
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
