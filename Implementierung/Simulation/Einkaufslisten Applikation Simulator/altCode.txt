@@ -1,0 +1,10 @@
+//		statement.executeUpdate("INSERT INTO produkt_verbrauchsstatistik (ID, kunden_id, produkt_id, verbrauch_in_tagen)"
+//				+ "VALUES (" + 1 + ", " + 1 + ", " + 1 + ", " + 0 + ")");
+//		statement.executeUpdate("INSERT INTO produkt_verbrauchsstatistik (ID, kunden_id, produkt_id, verbrauch_in_tagen)"
+//				+ "VALUES (" + 2 + ", " + 1 + ", " + 2 + ", " + 0 + ")");
+//		statement.executeUpdate("INSERT INTO produkt_verbrauchsstatistik (ID, kunden_id, produkt_id, verbrauch_in_tagen)"
+//				+ "VALUES (" + 3 + ", " + 1 + ", " + 3 + ", " + 0 + ")");
+//		statement.executeUpdate("INSERT INTO produkt_verbrauchsstatistik (ID, kunden_id, produkt_id, verbrauch_in_tagen)"
+//				+ "VALUES (" + 4 + ", " + 1 + ", " + 4 + ", " + 0 + ")");
+//		statement.executeUpdate("INSERT INTO produkt_verbrauchsstatistik (ID, kunden_id, produkt_id, verbrauch_in_tagen)"
+//				+ "VALUES (" + 5 + ", " + 1 + ", " + 5 + ", " + 0 + ")");

@@ -1,0 +1,28 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layout_border"
+    android:padding="14dp"
+    android:layout_margin="14dp"
+    tools:context="com.example.fabiosprotte.kassen_system.check_product_Fragment">
+
+     <fragment
+         android:id="@+id/barcode_scan_Fragment"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         class="com.example.fabiosprotte.kassen_system.Barcode_Scann_Fragment"
+         tools:layout="@layout/fragment_barcode__scann_">
+     </fragment>
+
+     <fragment
+         android:id="@+id/product_list_warenkorb_fragment"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         class="com.example.fabiosprotte.kassen_system.product_list_warenkorb_Fragment"
+         tools:layout="@layout/fragment_product_list_warenkorb_">
+     </fragment>
+
+ </LinearLayout>

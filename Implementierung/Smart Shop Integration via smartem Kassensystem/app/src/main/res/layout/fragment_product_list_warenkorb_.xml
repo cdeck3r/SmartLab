@@ -1,0 +1,9 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/layout_border"
+    android:padding="14dp"
+    android:layout_margin="14dp"
+    tools:context="com.example.fabiosprotte.kassen_system.product_list_warenkorb_Fragment">
+</RelativeLayout>

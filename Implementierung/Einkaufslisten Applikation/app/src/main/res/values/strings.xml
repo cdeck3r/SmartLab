@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EinkaufslistenGenerator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_einkaufsliste">EinkaufslisteActivity</string>
+    <string name="title_activity_einkaufslisten">EinkaufslistenActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_warenkorb">WarenkorbActivity</string>
+    <string name="title_activity_historie">HistorieActivity</string>
+    <string name="title_activity_anmelden__erzeugung__qrcode">Anmelden_Erzeugung_QRCode</string>
+</resources>

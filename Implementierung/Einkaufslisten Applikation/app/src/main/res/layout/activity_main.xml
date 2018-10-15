@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Einkaufsliste"
+        android:id="@+id/button_einkaufsliste"
+        android:layout_marginBottom="58dp"
+        android:layout_above="@+id/button_Warenkorb"
+        android:layout_alignStart="@+id/button_anmelden" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Warenkorb"
+        android:id="@+id/button_Warenkorb"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/button_Historie"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Historie"
+        android:id="@+id/button_Historie"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_Warenkorb" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Anmelden"
+        android:id="@+id/button_anmelden"
+        android:layout_above="@+id/button_einkaufsliste"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp" />
+</RelativeLayout>
